@@ -15,20 +15,31 @@ const Wrapper = styled.div`
 
 const Error = styled.span``;
 
-const Cards = (city) => {
+const Cards = ({ city, cat }) => {
   let selectedItems = [];
   doctorsDetails.map((item) => {
-    if (item.city === city.city) {
+    if (city && !cat) {
+      if (item.city === city) {
+        selectedItems.push(item);
+      }
+    } else if (!city && cat) {
+      if (item.specialty === cat) {
+        selectedItems.push(item);
+      }
+    } else if (city && cat) {
+      if (item.city === city && item.specialty === cat) {
+        selectedItems.push(item);
+      }
+    } else {
       selectedItems.push(item);
     }
-    // setSelectedDoctors(selectedItems);
   });
 
   return (
     <Wrapper>
-      {city
-        ? selectedItems.map((item) => <Card item={item} key={item.id} />)
-        : doctorsDetails.map((item) => <Card item={item} key={item.id} />)}
+      {selectedItems.map((item) => (
+        <Card item={item} key={item.id} />
+      ))}
     </Wrapper>
   );
 };

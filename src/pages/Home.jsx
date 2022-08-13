@@ -5,7 +5,6 @@ import Sidebar from "../components/Sidebar";
 import styled from "styled-components";
 
 const Container = styled.div`
-  /* position: relative; */
   display: flex;
   gap: 20px;
   flex-direction: row-reverse;
@@ -14,14 +13,15 @@ const Container = styled.div`
 `;
 
 const Home = () => {
-  const [city, setCity] = useState("تهران");
+  const [city, setCity] = useState(null);
+  const [cat, setCat] = useState(null);
 
   return (
     <div>
       <Navbar />
       <Container>
-        <Sidebar setCity={setCity} />
-        <Cards city={city} />
+        <Sidebar setCity={setCity} setCat={setCat} />
+        <Cards city={city} cat={cat} />
       </Container>
     </div>
   );

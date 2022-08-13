@@ -50,16 +50,21 @@ const CategorieItemText = styled.div`
   text-transform: lowercase;
 `;
 
-const Sidebar = ({ setCity }) => {
+const Sidebar = ({ setCity, setCat }) => {
   const handleFilters = (e) => {
     const value = e.target.value;
     const filterName = e.target.name;
     setCity(value);
   };
 
+  const handleClick = (e) => {
+    setCat(e.target.innerText);
+  };
+
   return (
     <Wrapper>
-      <Select name="city" defaultValue="تهران" onChange={handleFilters}>
+      <Select name="city" defaultValue="...شهر" onChange={handleFilters}>
+        <option disabled>...شهر</option>
         <option>تهران</option>
         <option>مشهد</option>
         <option>اصفهان</option>
@@ -69,39 +74,55 @@ const Sidebar = ({ setCity }) => {
       <Categories>
         <CategorieItem>
           <KeyboardArrowLeftIcon />
-          <CategorieItemText>متخصص زنان و زایمان</CategorieItemText>
+          <CategorieItemText onClick={handleClick}>
+            متخصص زنان و زایمان
+          </CategorieItemText>
         </CategorieItem>
         <CategorieItem>
           <KeyboardArrowLeftIcon />
-          <CategorieItemText>دندانپزشک</CategorieItemText>
+          <CategorieItemText onClick={handleClick}>دندانپزشک</CategorieItemText>
         </CategorieItem>
         <CategorieItem>
           <KeyboardArrowLeftIcon />
-          <CategorieItemText>متخصص عفونی</CategorieItemText>
+          <CategorieItemText onClick={handleClick}>
+            متخصص عفونی
+          </CategorieItemText>
         </CategorieItem>
         <CategorieItem>
           <KeyboardArrowLeftIcon />
-          <CategorieItemText>متخصص داخلی</CategorieItemText>
+          <CategorieItemText onClick={handleClick}>
+            متخصص داخلی
+          </CategorieItemText>
         </CategorieItem>
         <CategorieItem>
           <KeyboardArrowLeftIcon />
-          <CategorieItemText>متخصص پوست و مو</CategorieItemText>
+          <CategorieItemText onClick={handleClick}>
+            متخصص پوست و مو
+          </CategorieItemText>
         </CategorieItem>
         <CategorieItem>
           <KeyboardArrowLeftIcon />
-          <CategorieItemText>متخصص قلب و عروق</CategorieItemText>
+          <CategorieItemText onClick={handleClick}>
+            متخصص قلب و عروق
+          </CategorieItemText>
         </CategorieItem>
         <CategorieItem>
           <KeyboardArrowLeftIcon />
-          <CategorieItemText>متخصص گوش و حلق و بینی</CategorieItemText>
+          <CategorieItemText onClick={handleClick}>
+            متخصص گوش و حلق و بینی
+          </CategorieItemText>
         </CategorieItem>
         <CategorieItem>
           <KeyboardArrowLeftIcon />
-          <CategorieItemText>متخصص مغز و اعصاب</CategorieItemText>
+          <CategorieItemText onClick={handleClick}>
+            متخصص مغز و اعصاب
+          </CategorieItemText>
         </CategorieItem>
         <CategorieItem>
           <KeyboardArrowLeftIcon />
-          <CategorieItemText>متخصص ارتوپد</CategorieItemText>
+          <CategorieItemText onClick={handleClick}>
+            متخصص ارتوپد
+          </CategorieItemText>
         </CategorieItem>
       </Categories>
     </Wrapper>
