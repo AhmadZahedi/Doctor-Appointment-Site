@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Cards from "../components/Cards";
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 import Sidebar from "../components/Sidebar";
 import styled from "styled-components";
 
@@ -23,6 +24,7 @@ const Home = () => {
         <Sidebar setCity={setCity} setCat={setCat} />
         <Cards city={city} cat={cat} />
       </Container>
+      <Footer />
     </div>
   );
 };

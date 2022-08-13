@@ -3,12 +3,15 @@ import styled from "styled-components";
 import logo from "../imgs/LunaFinalWhite.png";
 import SearchIcon from "@mui/icons-material/Search";
 
-const Container = styled.div``;
+const Container = styled.div`
+  /* width: 100vw; */
+`;
 
 const Upsection = styled.div`
-  width: 100vw;
+  /* width: 100vw; */
   background-color: #00748e;
   color: #fff;
+  padding: 15px 0;
 `;
 
 const Wrapper = styled.div`
@@ -36,7 +39,7 @@ const MyAppointments = styled.p`
 `;
 
 const Downsection = styled.div`
-  width: 100vw;
+  /* width: 100vw; */
   background-color: #2cbfd8;
   color: #fff;
 `;

@@ -2,7 +2,6 @@ import React from "react";
 import Card from "./Card";
 import styled from "styled-components";
 import { doctorsDetails } from "../data";
-import { useState } from "react";
 
 const Wrapper = styled.div`
   flex: 3;

@@ -1,14 +1,13 @@
 import React from "react";
 import styled from "styled-components";
 import VerifiedIcon from "@mui/icons-material/Verified";
-import img from "../imgs/DrImage.jpg";
+import { Link } from "react-router-dom";
 
 const Container = styled.div`
   display: flex;
   border: 1px solid #cfcfcf;
   border-radius: 10px;
   overflow: hidden;
-  cursor: pointer;
 `;
 
 const ImageWrapper = styled.div`
@@ -25,7 +24,7 @@ const Image = styled.img`
 `;
 
 const InfoWrapper = styled.div`
-  /* background-color: #b3ff00; */
+  position: relative;
   flex: 3;
 `;
 
@@ -36,10 +35,13 @@ const NameCityWrapper = styled.div`
 `;
 
 const City = styled.span`
-  font-size: 8px;
+  font-size: 16px;
+  color: #999;
 `;
 
-const Name = styled.span``;
+const Name = styled.span`
+  font-size: 20px;
+`;
 
 const Specialty = styled.p`
   margin: 0;
@@ -47,6 +49,36 @@ const Specialty = styled.p`
   padding: 5px 10px;
   text-align: right;
   font-size: 12px;
+`;
+
+const LinkButton = styled.div`
+  font-size: 16px;
+  text-align: center;
+  padding: 5px 40px;
+  color: #fff;
+  background-color: #036c9c;
+  border-radius: 10px;
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: fit-content;
+  height: 30px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+
+  &:hover,
+  &:focus {
+    box-shadow: inset #004f74 0px 0px 0px 2px;
+    color: #036c9c;
+    background-color: #fff;
+  }
+
+  &:active {
+    box-shadow: 2px inset #036c9c;
+    color: #004f74;
+    background-color: #bae7fc;
+  }
 `;
 
 const Card = ({ item }) => {
@@ -68,6 +100,9 @@ const Card = ({ item }) => {
           </Name>
         </NameCityWrapper>
         <Specialty>{item.specialty}</Specialty>
+        <Link to={`/doctor/${item.id}`} style={{ textDecoration: "none" }}>
+          <LinkButton>مشاهده </LinkButton>
+        </Link>
       </InfoWrapper>
     </Container>
   );
