@@ -4,7 +4,6 @@ import VerifiedIcon from "@mui/icons-material/Verified";
 import img from "../imgs/DrImage.jpg";
 
 const Container = styled.div`
-  font-family: Arial, Helvetica, sans-serif;
   display: flex;
   border: 1px solid #cfcfcf;
   border-radius: 10px;
@@ -16,13 +15,13 @@ const ImageWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  flex: 1.5;
+  flex: 1.3;
   overflow: hidden;
 `;
 
 const Image = styled.img`
-  width: 100%;
-  height: stretch;
+  width: cover;
+  height: 100%;
 `;
 
 const InfoWrapper = styled.div`

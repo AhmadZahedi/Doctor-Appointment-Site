@@ -4,7 +4,6 @@ import KeyboardArrowLeftIcon from "@mui/icons-material/KeyboardArrowLeft";
 import { doctorsDetails } from "../data";
 
 const Wrapper = styled.div`
-  font-family: Arial, Helvetica, sans-serif;
   width: 250px;
   height: 1000px;
   display: flex;
@@ -13,6 +12,7 @@ const Wrapper = styled.div`
 `;
 
 const Select = styled.select`
+  font-family: "IRANSans", "Vazir", Arial, sans-serif;
   font-size: 16px;
   text-align: right;
   border: 2px solid #dddddd;
@@ -69,47 +69,39 @@ const Sidebar = ({ setCity }) => {
       <Categories>
         <CategorieItem>
           <KeyboardArrowLeftIcon />
-          <CategorieItemText>Obstetrics and Gynecology</CategorieItemText>
+          <CategorieItemText>متخصص زنان و زایمان</CategorieItemText>
         </CategorieItem>
         <CategorieItem>
           <KeyboardArrowLeftIcon />
-          <CategorieItemText>Neurology</CategorieItemText>
+          <CategorieItemText>دندانپزشک</CategorieItemText>
         </CategorieItem>
         <CategorieItem>
           <KeyboardArrowLeftIcon />
-          <CategorieItemText>orthopedics</CategorieItemText>
+          <CategorieItemText>متخصص عفونی</CategorieItemText>
         </CategorieItem>
         <CategorieItem>
           <KeyboardArrowLeftIcon />
-          <CategorieItemText>Optometrist</CategorieItemText>
+          <CategorieItemText>متخصص داخلی</CategorieItemText>
         </CategorieItem>
         <CategorieItem>
           <KeyboardArrowLeftIcon />
-          <CategorieItemText>skin and hair</CategorieItemText>
+          <CategorieItemText>متخصص پوست و مو</CategorieItemText>
         </CategorieItem>
         <CategorieItem>
           <KeyboardArrowLeftIcon />
-          <CategorieItemText>Digestion</CategorieItemText>
+          <CategorieItemText>متخصص قلب و عروق</CategorieItemText>
         </CategorieItem>
         <CategorieItem>
           <KeyboardArrowLeftIcon />
-          <CategorieItemText>Cardiovascular</CategorieItemText>
+          <CategorieItemText>متخصص گوش و حلق و بینی</CategorieItemText>
         </CategorieItem>
         <CategorieItem>
           <KeyboardArrowLeftIcon />
-          <CategorieItemText>Psychiatrist</CategorieItemText>
+          <CategorieItemText>متخصص مغز و اعصاب</CategorieItemText>
         </CategorieItem>
         <CategorieItem>
           <KeyboardArrowLeftIcon />
-          <CategorieItemText>Dentist</CategorieItemText>
-        </CategorieItem>
-        <CategorieItem>
-          <KeyboardArrowLeftIcon />
-          <CategorieItemText>Physiotherapist</CategorieItemText>
-        </CategorieItem>
-        <CategorieItem>
-          <KeyboardArrowLeftIcon />
-          <CategorieItemText>Laboratory</CategorieItemText>
+          <CategorieItemText>متخصص ارتوپد</CategorieItemText>
         </CategorieItem>
       </Categories>
     </Wrapper>

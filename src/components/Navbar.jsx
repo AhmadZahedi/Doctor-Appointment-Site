@@ -3,9 +3,7 @@ import styled from "styled-components";
 import logo from "../imgs/LunaFinalWhite.png";
 import SearchIcon from "@mui/icons-material/Search";
 
-const Container = styled.div`
-  font-family: Arial, Helvetica, sans-serif;
-`;
+const Container = styled.div``;
 
 const Upsection = styled.div`
   width: 100vw;
@@ -89,6 +87,7 @@ const SearchContainer = styled.div`
 `;
 
 const Input = styled.input`
+  text-align: right;
   height: 30px;
   border: none;
   padding: 0 10px;
@@ -103,20 +102,20 @@ const Navbar = () => {
     <Container>
       <Upsection>
         <Wrapper>
-          <ProfileName>Ahmad</ProfileName>
-          <MyList>My list</MyList>
-          <MyAppointments>My appointments</MyAppointments>
+          <ProfileName>احمد</ProfileName>
+          <MyList>لیست من</MyList>
+          <MyAppointments>نوبت های من</MyAppointments>
         </Wrapper>
       </Upsection>
       <Downsection>
         <Wrapper>
           <Logo src={logo} />
-          <UserPanel>User Panel</UserPanel>
-          <DocInter>Doctors Intranse</DocInter>
-          <QA>Questions & Answers</QA>
+          <UserPanel>پنل کاربری</UserPanel>
+          <DocInter>ورود پزشکان</DocInter>
+          <QA>پرسش و پاسخ پزشکی</QA>
           <SearchContainer>
             <SearchIcon style={{ color: "gray", fontSize: 16 }} />
-            <Input placeholder="Search" />
+            <Input placeholder="...جستجو" />
           </SearchContainer>
         </Wrapper>
       </Downsection>
