@@ -10,8 +10,23 @@ const Footer = () => {
           <li>ثبت نام پزشکان (دریافت صفحه نوبت)</li>
         </ul>
       </div>
-      <div className="centerCol"></div>
-      <div className="leftCol"></div>
+      <div className="centerCol">
+        <ul className="footer-list">
+          <li>ارائه سیستم نوبت دهی اینترنتی به مطب ها</li>
+          <li>تلفن های پشتیبانی </li>
+          <li>صفحه نخست</li>
+          <li>پرسش و پاسخ پزشکی</li>
+        </ul>
+      </div>
+      <div className="leftCol">
+        <ul className="footer-list">
+          <li>عضویت پزشک</li>
+          <li>قوانین سایت</li>
+        </ul>
+      </div>
+      <div className="logoContainer">
+        <img alt="logo image" src="../imgs/LunaFinalWhite.png" />
+      </div>
     </div>
   );
 };
