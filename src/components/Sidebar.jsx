@@ -14,12 +14,10 @@ const Wrapper = styled.div`
 const Select = styled.select`
   font-family: "IRANSans", "Vazir", Arial, sans-serif;
   font-size: 16px;
-  text-align: right;
   border: 2px solid #dddddd;
   border-radius: 8px;
   outline-style: none;
-  scroll-behavior: smooth;
-  padding: 15px 5px;
+  padding: 15px 15px;
   margin: 30px 0 15px 0;
 
   :focus {
@@ -40,13 +38,11 @@ const Categories = styled.div`
 const CategorieItem = styled.div`
   display: flex;
   gap: 5px;
-  flex-direction: row-reverse;
   cursor: pointer;
 `;
 
 const CategorieItemText = styled.div`
   font-size: 18px;
-  text-align: right;
   text-transform: lowercase;
 `;
 
@@ -64,7 +60,7 @@ const Sidebar = ({ setCity, setCat }) => {
   return (
     <Wrapper>
       <Select name="city" defaultValue="...شهر" onChange={handleFilters}>
-        <option disabled>...شهر</option>
+        <option disabled>شهر...</option>
         <option>تهران</option>
         <option>مشهد</option>
         <option>اصفهان</option>

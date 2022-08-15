@@ -4,7 +4,6 @@
 
 .upSection {
   display: flex;
-  flex-flow: row-reverse;
 }
 
 .cardButtonsWrapper {
@@ -18,7 +17,6 @@
 .card {
   height: 200px;
   display: flex;
-  flex-flow: row-reverse;
   gap: 10px;
 }
 
@@ -44,7 +42,7 @@
 
 .nameWrapper {
   display: flex;
-  flex-flow: row-reverse;
+  /* flex-flow: row-reverse; */
   align-items: center;
 }
 
@@ -54,14 +52,12 @@
 
 .specialty {
   color: rgb(0, 150, 170);
-  text-align: right;
   font-size: 12px;
   margin-top: 2%;
 }
 
 .paramsWrapper {
   display: flex;
-  flex-flow: row-reverse;
   justify-content: space-between;
   font-size: 12px;
   margin-top: 10%;
@@ -83,7 +79,6 @@
   height: 50px;
   display: flex;
   justify-content: space-between;
-  flex-flow: row-reverse;
   gap: 10px;
 }
 
@@ -92,7 +87,6 @@
   background-color: rgb(73, 167, 170);
   border-radius: 0 0 10px 0;
   display: flex;
-  flex-flow: row-reverse;
   justify-content: space-around;
   align-items: center;
 }
@@ -100,7 +94,6 @@
 .myListButtonText {
   font-size: 12px;
   color: #fff;
-  text-align: right;
 }
 
 .getAppointmetnButton {
@@ -108,7 +101,6 @@
   background-color: rgb(14, 207, 56);
   border-radius: 0 0 0 10px;
   display: flex;
-  flex-flow: row-reverse;
   justify-content: space-around;
   align-items: center;
 }
@@ -116,7 +108,6 @@
 .getAppointmentButtonText {
   font-size: 12px;
   color: #fff;
-  text-align: right;
 }
 
 .timeScheduleWrapper {

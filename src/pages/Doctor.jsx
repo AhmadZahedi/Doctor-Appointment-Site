@@ -41,7 +41,7 @@ const Doctor = () => {
                 <p className="specialty">{selectedItem.specialty}</p>
                 <div className="paramsWrapper">
                   <div className="followersWrapper">
-                    <p className="followersCount">456 نفر دنبال کننده</p>
+                    <p className="followersCount">425 نفر</p>
                     <div>followersIcon</div>
                   </div>
                   <div className="gmcNumWrapper">

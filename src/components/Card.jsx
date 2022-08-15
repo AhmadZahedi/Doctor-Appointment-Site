@@ -8,6 +8,7 @@ const Container = styled.div`
   border: 1px solid #cfcfcf;
   border-radius: 10px;
   overflow: hidden;
+  flex-flow: row-reverse;
 `;
 
 const ImageWrapper = styled.div`
@@ -47,7 +48,6 @@ const Specialty = styled.p`
   margin: 0;
   line-height: 2;
   padding: 5px 10px;
-  text-align: right;
   font-size: 12px;
 `;
 
@@ -89,7 +89,6 @@ const Card = ({ item }) => {
       </ImageWrapper>
       <InfoWrapper>
         <NameCityWrapper>
-          <City>{item.city}</City>
           <Name>
             <VerifiedIcon
               color="primary"
@@ -98,6 +97,7 @@ const Card = ({ item }) => {
             />
             {item.name}
           </Name>
+          <City>{item.city}</City>
         </NameCityWrapper>
         <Specialty>{item.specialty}</Specialty>
         <Link to={`/doctor/${item.id}`} style={{ textDecoration: "none" }}>

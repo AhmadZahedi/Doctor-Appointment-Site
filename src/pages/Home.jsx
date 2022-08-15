@@ -8,7 +8,7 @@ import styled from "styled-components";
 const Container = styled.div`
   display: flex;
   gap: 20px;
-  flex-direction: row-reverse;
+  /* flex-direction: row-reverse; */
   padding: 0 100px;
 `;
 

@@ -3,12 +3,9 @@ import styled from "styled-components";
 import logo from "../imgs/LunaFinalWhite.png";
 import SearchIcon from "@mui/icons-material/Search";
 
-const Container = styled.div`
-  /* width: 100vw; */
-`;
+const Container = styled.div``;
 
 const Upsection = styled.div`
-  /* width: 100vw; */
   background-color: #00748e;
   color: #fff;
   padding: 15px 0;
@@ -19,7 +16,6 @@ const Wrapper = styled.div`
   padding-left: 5vw;
   display: flex;
   align-items: center;
-  flex-direction: row-reverse;
   gap: 30px;
 `;
 
@@ -39,7 +35,6 @@ const MyAppointments = styled.p`
 `;
 
 const Downsection = styled.div`
-  /* width: 100vw; */
   background-color: #2cbfd8;
   color: #fff;
 `;
@@ -90,7 +85,6 @@ const SearchContainer = styled.div`
 `;
 
 const Input = styled.input`
-  text-align: right;
   height: 30px;
   border: none;
   padding: 0 10px;
@@ -118,7 +112,7 @@ const Navbar = () => {
           <QA>پرسش و پاسخ پزشکی</QA>
           <SearchContainer>
             <SearchIcon style={{ color: "gray", fontSize: 16 }} />
-            <Input placeholder="...جستجو" />
+            <Input placeholder="جستجو..." />
           </SearchContainer>
         </Wrapper>
       </Downsection>
