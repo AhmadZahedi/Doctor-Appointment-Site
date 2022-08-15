@@ -3,7 +3,7 @@ import "./css/Footer.css";
 
 const Footer = () => {
   return (
-    <div className="container">
+    <div className="footer-container">
       <div className="rightCol">
         <ul className="footer-list">
           <li>ورود پزشکان</li>

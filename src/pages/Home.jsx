@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Cards from "../components/Cards";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
@@ -9,8 +9,7 @@ const Container = styled.div`
   display: flex;
   gap: 20px;
   flex-direction: row-reverse;
-  padding-right: 100px;
-  padding-left: 100px;
+  padding: 0 100px;
 `;
 
 const Home = () => {
