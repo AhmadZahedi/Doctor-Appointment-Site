@@ -1,17 +1,24 @@
+* {
+  box-sizing: border-box;
+}
+
 .container {
   padding: 50px 100px;
 }
 
 .upSection {
   display: flex;
+  gap: 100px;
+  height: fit-content;
 }
 
 .cardButtonsWrapper {
+  height: 100%;
   display: flex;
   flex-direction: column;
   gap: 10px;
   overflow: hidden;
-  flex: 1;
+  flex: 1.5;
 }
 
 .card {
@@ -50,10 +57,21 @@
   font-size: 22px;
 }
 
+.citySpecialtyWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2%;
+}
+
+.city {
+  font-size: 12px;
+  color: rgb(0, 150, 170);
+}
+
 .specialty {
   color: rgb(0, 150, 170);
   font-size: 12px;
-  margin-top: 2%;
 }
 
 .paramsWrapper {
@@ -64,15 +82,19 @@
 }
 
 .followersWrapper {
-}
-
-.followersCount {
+  display: flex;
+  flex-flow: row-reverse;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
 }
 
 .gmcNumWrapper {
-}
-
-.gmcNum {
+  display: flex;
+  flex-flow: row-reverse;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
 }
 
 .buttonsWrapper {
@@ -84,11 +106,12 @@
 
 .myListButton {
   flex: 1.3;
-  background-color: rgb(73, 167, 170);
+  background-color: #49a7aa;
   border-radius: 0 0 10px 0;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  cursor: pointer;
 }
 
 .myListButtonText {
@@ -103,6 +126,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+  cursor: pointer;
 }
 
 .getAppointmentButtonText {
@@ -110,12 +134,173 @@
   color: #fff;
 }
 
-.timeScheduleWrapper {
+.furtherInformation {
   flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.middleSection {
+.furtherInformationTitle {
+  color: #00748e;
+}
+
+.furtherInformationTitle hr {
+  border: none;
+  height: 2px;
+  background-color: #00748e;
+}
+
+.furtherInformationText {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-grow: 10;
+}
+
+.phone {
+  font-weight: bold;
+  text-align: center;
+}
+
+.instagram {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.instagramText {
+  font-size: 12px;
+  color: #e60060;
 }
 
 .downSection {
+  display: flex;
+  gap: 100px;
+  margin-top: 50px;
+  height: fit-content;
+}
+
+.commentSection {
+  flex: 1.5;
+  border: 1px solid #d0faf3;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.commentTitle {
+  text-align: center;
+  background-color: #d0faf3;
+  color: #00748e;
+  padding: 10px;
+}
+
+.comments {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.comment {
+  padding: 5px 15px 0 15px;
+}
+
+.comment hr {
+  border: none;
+  height: 1px;
+  background-color: #d0faf3;
+  margin-top: 5px;
+}
+
+.nameStarsWrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.commentName {
+  font-size: 10px;
+}
+
+.commentStars {
+  display: flex;
+  flex-flow: row-reverse;
+}
+
+.commentText {
+  font-size: 14px;
+}
+
+.recommendersContainer {
+  flex: 2;
+  border: 1px solid #d0faf3;
+  overflow: hidden;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+
+.recommendersTitle {
+  width: 100%;
+  text-align: center;
+  background-color: #d0faf3;
+  color: #00748e;
+  padding: 10px;
+}
+
+.recommenders {
+  flex: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 0 20px;
+}
+
+.recommenderCard {
+  flex: 1;
+  height: 80%;
+  opacity: 80%;
+  transition: 0.4s ease all;
+  cursor: pointer;
+}
+
+.recommenderCard:hover {
+  opacity: 100%;
+  scale: 105%;
+}
+
+.recommenderImgWrapper {
+  width: 100%;
+  height: 70%;
+  overflow: hidden;
+  border-radius: 25px 25px 0 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.recommenderImg {
+  width: 100%;
+  height: cover;
+}
+
+.recommenderInfo {
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 5px;
+  text-align: center;
+}
+
+.recommenderName {
+  font-size: 18px;
+}
+
+.recommenderDesc {
+  font-size: 8px;
 }

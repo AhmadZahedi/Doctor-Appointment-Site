@@ -42,6 +42,10 @@ const City = styled.span`
 
 const Name = styled.span`
   font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row-reverse;
 `;
 
 const Specialty = styled.p`
@@ -92,10 +96,9 @@ const Card = ({ item }) => {
           <Name>
             <VerifiedIcon
               color="primary"
-              fontSize="20"
-              style={{ paddingRight: "10" }}
+              style={{ fontSize: "30", paddingRight: "10" }}
             />
-            {item.name}
+            دکتر {item.name}
           </Name>
           <City>{item.city}</City>
         </NameCityWrapper>

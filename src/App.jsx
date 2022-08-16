@@ -1,7 +1,9 @@
 import React from "react";
 import Home from "./pages/Home";
 import Doctor from "./pages/Doctor";
+import Appointment from "./pages/Appointment";
 import ScrollUp from "./components/ScrollUp";
+import MyGithubAccount from "./components/AuthorGithubAccount";
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
@@ -12,6 +14,8 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/doctor/:id" element={<Doctor />} />
+        <Route path="/MyGithubAccount" element={<MyGithubAccount />} />
+        <Route path="/doctor/:id/schedule" element={<Appointment />} />
       </Routes>
     </BrowserRouter>
   );

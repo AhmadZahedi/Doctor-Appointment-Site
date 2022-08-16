@@ -59,7 +59,7 @@ const Sidebar = ({ setCity, setCat }) => {
 
   return (
     <Wrapper>
-      <Select name="city" defaultValue="...شهر" onChange={handleFilters}>
+      <Select name="city" defaultValue="شهر..." onChange={handleFilters}>
         <option disabled>شهر...</option>
         <option>تهران</option>
         <option>مشهد</option>
