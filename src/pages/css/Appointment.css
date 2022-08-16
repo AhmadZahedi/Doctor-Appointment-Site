@@ -1,0 +1,140 @@
+.appointmentContainer {
+  padding: 50px 100px;
+}
+
+.selectedDoctor {
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+.doctorImgWrapper {
+  width: 150px;
+  height: 150px;
+  /* border-radius: 10px; */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.img {
+  width: cover;
+  height: cover;
+}
+
+.doctorInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.doctorNameWrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.doctorNameText {
+  font-size: 22px;
+}
+
+.doctorSpecialty {
+  font-size: 16px;
+}
+
+.todaysDate {
+  background-color: #d0faf3;
+  padding: 10px;
+  border-radius: 15px 15px 0 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.todaysText {
+  color: #005568;
+}
+
+.timeTable {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.daysCol {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.dayCheckboxWrapper {
+  padding: 5px;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.dayCheckboxWrapper:hover {
+  background-color: #d0faf3;
+}
+
+.dayCheckboxWrapper:active {
+  background-color: #00a187;
+}
+
+/* NOT WORKING!!! */
+
+.dayCheckboxWrapper:focus {
+  background-color: #22003d;
+}
+
+.dayCheckboxWrapper:visited {
+  background-color: #c2006b;
+}
+
+.day {
+  cursor: pointer;
+}
+
+.clocksCol {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.clockCheckboxWrapper {
+  padding: 5px;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.clockCheckboxWrapper:hover {
+  background-color: #d0faf3;
+}
+
+.clockCheckboxWrapper:active {
+  background-color: #00a187;
+}
+
+.freeClock {
+  color: #08eb00;
+  cursor: pointer;
+}
+
+.notFreeClock {
+  color: #c2006b;
+  text-decoration: line-through;
+  cursor: default !important;
+}

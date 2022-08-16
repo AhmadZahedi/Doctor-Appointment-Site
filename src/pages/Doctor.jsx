@@ -17,9 +17,9 @@ const Doctor = () => {
   const location = useLocation();
   const Id = location.pathname.split("/")[2];
   const id = parseInt(Id, 10);
-  let selectedItem = {};
+  let selectedDoctor = {};
   doctorsDetails.map((item) => {
-    if (item.id == id) selectedItem = item;
+    if (item.id == id) selectedDoctor = item;
   });
 
   const starsProducer = (n) => {
@@ -46,29 +46,31 @@ const Doctor = () => {
           <div className="cardButtonsWrapper">
             <div className="card">
               <div className="imgWrapper">
-                <img className="img" src={selectedItem.img} />
+                <img className="img" src={selectedDoctor.img} />
               </div>
               <div className="infoWrapper">
                 <div className="nameWrapper">
-                  <div className="name">دکتر {selectedItem.name}</div>
+                  <div className="name">دکتر {selectedDoctor.name}</div>
                   <VerifiedIcon
                     color="primary"
                     style={{ fontSize: "30", paddingRight: "10" }}
                   />
                 </div>
                 <div className="citySpecialtyWrapper">
-                  <div className="specialty">{selectedItem.specialty}</div>
-                  <div className="city">{selectedItem.city}</div>
+                  <div className="specialty">{selectedDoctor.specialty}</div>
+                  <div className="city">{selectedDoctor.city}</div>
                 </div>
                 <div className="paramsWrapper">
                   <div className="followersWrapper">
                     <div className="followersCount">
-                      {selectedItem.followers} دنبالکننده
+                      {selectedDoctor.followers} دنبالکننده
                     </div>
                     <PersonOutlineIcon color="primary" />
                   </div>
                   <div className="gmcNumWrapper">
-                    <div className="gmcNum">شماره نظام: {selectedItem.gmc}</div>
+                    <div className="gmcNum">
+                      شماره نظام: {selectedDoctor.gmc}
+                    </div>
                     <PolicyIcon color="primary" />
                   </div>
                 </div>
@@ -94,18 +96,18 @@ const Doctor = () => {
             </h3>
             <div className="furtherInformationText">
               <div className="university">
-                {selectedItem.specialty} فارغ التحصیل از دانشگاه
-                {` ` + selectedItem.uni}
+                {selectedDoctor.specialty} فارغ التحصیل از دانشگاه
+                {` ` + selectedDoctor.uni}
               </div>
-              <p className="address">آدرس: {selectedItem.address}</p>
-              <p className="phone">تلفن تماس :{selectedItem.phone}</p>
-              <p className="timeText">{selectedItem.timeText}</p>
+              <p className="address">آدرس: {selectedDoctor.address}</p>
+              <p className="phone">تلفن تماس :{selectedDoctor.phone}</p>
+              <p className="timeText">{selectedDoctor.timeText}</p>
             </div>
             <div className="connections">
               <div className="instagram" onClick={goToMyGithub}>
                 <InstagramIcon style={{ fontSize: 34, color: "#e60060" }} />
                 <p className="instagramText">
-                  صفحه دکتر {selectedItem.name} در فضای مجازی
+                  صفحه دکتر {selectedDoctor.name} در فضای مجازی
                 </p>
               </div>
             </div>
@@ -115,7 +117,7 @@ const Doctor = () => {
           <div className="commentSection">
             <div className="commentTitle">نظرات</div>
             <div className="comments">
-              {selectedItem.customers.map((item) => {
+              {selectedDoctor.customers.map((item) => {
                 return (
                   <div key={parseInt(item.customerId, 10)} className="comment">
                     <div className="nameStarsWrapper">
@@ -145,7 +147,7 @@ const Doctor = () => {
           </div>
           <div className="recommendersContainer">
             <div className="recommendersTitle">
-              کسانیکه دکتر {selectedItem.name} را پیشنهاد می‌کنند
+              کسانیکه دکتر {selectedDoctor.name} را پیشنهاد می‌کنند
             </div>
             <div className="recommenders">
               <div className="recommenderCard">
