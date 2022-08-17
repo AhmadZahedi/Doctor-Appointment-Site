@@ -86,23 +86,23 @@
   user-select: none;
 }
 
-.dayCheckboxWrapper:hover {
+/* .dayCheckboxWrapper:hover {
   background-color: #d0faf3;
 }
 
 .dayCheckboxWrapper:active {
   background-color: #00a187;
-}
+} */
 
 /* NOT WORKING!!! */
 
-.dayCheckboxWrapper:focus {
+/* .dayCheckboxWrapper:focus {
   background-color: #22003d;
 }
 
 .dayCheckboxWrapper:visited {
   background-color: #c2006b;
-}
+} */
 
 .day {
   cursor: pointer;
@@ -128,14 +128,14 @@
 .clockCheckboxWrapper input {
   pointer-events: none;
 }
-
+/* 
 .clockCheckboxWrapper:hover {
   background-color: #d0faf3;
 }
 
 .clockCheckboxWrapper:active {
   background-color: #00a187;
-}
+} */
 
 .freeClock {
   color: #08eb00;

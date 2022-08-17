@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
 import logo from "../imgs/LunaFinalWhite.png";
 import SearchIcon from "@mui/icons-material/Search";
@@ -95,19 +96,24 @@ const Input = styled.input`
 `;
 
 const Navbar = () => {
+  const navigate = useNavigate();
+  const handleLogin = () => {
+    navigate("/login");
+  };
+
   return (
     <Container>
       <Upsection>
         <Wrapper>
-          <ProfileName>احمد</ProfileName>
+          {/* <ProfileName onClick={goToUserPanel}>احمد</ProfileName>
           <MyList>لیست من</MyList>
-          <MyAppointments>نوبت های من</MyAppointments>
+          <MyAppointments>نوبت های من</MyAppointments> */}
         </Wrapper>
       </Upsection>
       <Downsection>
         <Wrapper>
           <Logo src={logo} />
-          <UserPanel>پنل کاربری</UserPanel>
+          <UserPanel onClick={handleLogin}>ورود کاربران</UserPanel>
           <DocInter>ورود پزشکان</DocInter>
           <QA>پرسش و پاسخ پزشکی</QA>
           <SearchContainer>

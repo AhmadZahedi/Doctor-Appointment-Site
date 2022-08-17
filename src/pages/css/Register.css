@@ -1,0 +1,106 @@
+.registerBody {
+  /* background-image: url("https://img.freepik.com/free-photo/blur-hospital_1203-7972.jpg?size=626&ext=jpg&ga=GA1.2.1101400910.1643470091"); */
+  background-image: url("https://thumbs.dreamstime.com/b/healthcare-medical-concept-medicine-doctor-stethoscope-hand-patients-come-to-hospital-background-179931139.jpg");
+  /* background-image: url("https://thumbs.dreamstime.com/b/doctor-stethoscope-white-icon-medical-hospital-backg-background-technology-network-concept-94228000.jpg"); */
+  /* background-image: url("https://thumbs.dreamstime.com/b/portrait-asian-medical-male-doctor-wear-mask-to-prevent-germs-standing-front-his-blurred-team-staff-hospital-186034827.jpg"); */
+
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  position: relative;
+}
+
+.registerBody {
+  width: 100vw;
+  height: 100vh;
+  /* position: relative; */
+}
+
+.registerLogo {
+  position: absolute;
+  width: auto;
+  height: auto;
+  top: 30px;
+  right: 100px;
+}
+
+.registerContainer {
+  background-color: #e4faf8;
+  max-width: 700px;
+  padding: 50px;
+  border-radius: 20px;
+  margin: auto;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-40%, -50%);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.registerForm {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.fieldset {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.label {
+  color: #002533;
+}
+
+.input {
+  font-family: "IRANSans", "Vazir", Arial, sans-serif;
+
+  border: none;
+  border-radius: 3px;
+  padding: 5px 10px;
+}
+
+.input::placeholder {
+  color: #b3b3b3;
+}
+
+/* input:optional {
+  border-color: rgb(47, 0, 255);
+}
+
+input:required {
+  border-color: rgb(157, 255, 0);
+}
+
+input:invalid {
+  border-color: red;
+}
+
+input:required:valid {
+  border-color: green;
+}
+
+input:invalid {
+  border-color: red;
+} */
+
+.registerButton {
+  font-family: "IRANSans", "Vazir", Arial, sans-serif;
+  font-size: 18px;
+  background-color: #5eb0fd;
+  color: #002533;
+  padding: 10px 0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.registerAnchorTag {
+  text-decoration: none;
+}

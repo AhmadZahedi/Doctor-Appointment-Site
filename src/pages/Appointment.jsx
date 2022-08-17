@@ -61,7 +61,8 @@ const Appointment = () => {
   const handleDayChoice = (e) => {
     selectedDoctor.times.map((item) => {
       if (dayValue === e.target.value) {
-        setDayValue("");
+        setDayValue("...");
+        setClockValue("...");
         setTimes([]);
       } else {
         setDayValue(e.target.value);
