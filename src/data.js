@@ -45,7 +45,7 @@ export const doctorsDetails = [
     ],
     times: [
       {
-        day: "سه شنبه ۹ مرداد ۱۴۰۰",
+        day: [{ D: "سه شنبه ۹ مرداد ۱۴۰۰", dayId: 1 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: true },
@@ -58,7 +58,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "چهارشنبه ۱۰ مرداد ۱۴۰۰",
+        day: [{ D: "چهارشنبه ۱۰ مرداد ۱۴۰۰", dayId: 2 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: true },
@@ -71,7 +71,8 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "پنجشنبه ۱۱ مرداد ۱۴۰۰",
+        day: [{ D: "پنجشنبه ۱۱ مرداد ۱۴۰۰", dayId: 3 }],
+
         clock: [
           { T: "10:00", isFree: false },
           { T: "10:30", isFree: true },
@@ -84,7 +85,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "شنبه ۱۳ مرداد ۱۴۰۰",
+        day: [{ D: "شنبه ۱۳ مرداد ۱۴۰۰", dayId: 4 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: true },
@@ -97,7 +98,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "یکشنبه ۱۴ مرداد ۱۴۰۰",
+        day: [{ D: "یکشنبه ۱۴ مرداد ۱۴۰۰", dayId: 5 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: false },
@@ -110,7 +111,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "دوشنبه ۱۵ مرداد ۱۴۰۰",
+        day: [{ D: "دوشنبه ۱۵ مرداد ۱۴۰۰", dayId: 6 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: true },
@@ -123,7 +124,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "سه شنبه ۱۶ مرداد ۱۴۰۰",
+        day: [{ D: "سه شنبه ۱۶ مرداد ۱۴۰۰", dayId: 7 }],
         clock: [
           { T: "10:00", isFree: false },
           { T: "10:30", isFree: false },
@@ -183,7 +184,7 @@ export const doctorsDetails = [
     ],
     times: [
       {
-        day: "سه شنبه ۹ مرداد ۱۴۰۰",
+        day: [{ D: "سه شنبه ۹ مرداد ۱۴۰۰", dayId: 1 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: true },
@@ -196,7 +197,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "چهارشنبه ۱۰ مرداد ۱۴۰۰",
+        day: [{ D: "چهارشنبه ۱۰ مرداد ۱۴۰۰", dayId: 2 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: true },
@@ -209,7 +210,8 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "پنجشنبه ۱۱ مرداد ۱۴۰۰",
+        day: [{ D: "پنجشنبه ۱۱ مرداد ۱۴۰۰", dayId: 3 }],
+
         clock: [
           { T: "10:00", isFree: false },
           { T: "10:30", isFree: true },
@@ -222,7 +224,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "شنبه ۱۳ مرداد ۱۴۰۰",
+        day: [{ D: "شنبه ۱۳ مرداد ۱۴۰۰", dayId: 4 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: true },
@@ -235,7 +237,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "یکشنبه ۱۴ مرداد ۱۴۰۰",
+        day: [{ D: "یکشنبه ۱۴ مرداد ۱۴۰۰", dayId: 5 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: false },
@@ -248,7 +250,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "دوشنبه ۱۵ مرداد ۱۴۰۰",
+        day: [{ D: "دوشنبه ۱۵ مرداد ۱۴۰۰", dayId: 6 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: true },
@@ -261,7 +263,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "سه شنبه ۱۶ مرداد ۱۴۰۰",
+        day: [{ D: "سه شنبه ۱۶ مرداد ۱۴۰۰", dayId: 7 }],
         clock: [
           { T: "10:00", isFree: false },
           { T: "10:30", isFree: false },
@@ -321,7 +323,7 @@ export const doctorsDetails = [
     ],
     times: [
       {
-        day: "سه شنبه ۹ مرداد ۱۴۰۰",
+        day: [{ D: "سه شنبه ۹ مرداد ۱۴۰۰", dayId: 1 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: true },
@@ -334,7 +336,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "چهارشنبه ۱۰ مرداد ۱۴۰۰",
+        day: [{ D: "چهارشنبه ۱۰ مرداد ۱۴۰۰", dayId: 2 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: true },
@@ -347,7 +349,8 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "پنجشنبه ۱۱ مرداد ۱۴۰۰",
+        day: [{ D: "پنجشنبه ۱۱ مرداد ۱۴۰۰", dayId: 3 }],
+
         clock: [
           { T: "10:00", isFree: false },
           { T: "10:30", isFree: true },
@@ -360,7 +363,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "شنبه ۱۳ مرداد ۱۴۰۰",
+        day: [{ D: "شنبه ۱۳ مرداد ۱۴۰۰", dayId: 4 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: true },
@@ -373,7 +376,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "یکشنبه ۱۴ مرداد ۱۴۰۰",
+        day: [{ D: "یکشنبه ۱۴ مرداد ۱۴۰۰", dayId: 5 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: false },
@@ -386,7 +389,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "دوشنبه ۱۵ مرداد ۱۴۰۰",
+        day: [{ D: "دوشنبه ۱۵ مرداد ۱۴۰۰", dayId: 6 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: true },
@@ -399,7 +402,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "سه شنبه ۱۶ مرداد ۱۴۰۰",
+        day: [{ D: "سه شنبه ۱۶ مرداد ۱۴۰۰", dayId: 7 }],
         clock: [
           { T: "10:00", isFree: false },
           { T: "10:30", isFree: false },
@@ -459,7 +462,7 @@ export const doctorsDetails = [
     ],
     times: [
       {
-        day: "سه شنبه ۹ مرداد ۱۴۰۰",
+        day: [{ D: "سه شنبه ۹ مرداد ۱۴۰۰", dayId: 1 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: true },
@@ -472,7 +475,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "چهارشنبه ۱۰ مرداد ۱۴۰۰",
+        day: [{ D: "چهارشنبه ۱۰ مرداد ۱۴۰۰", dayId: 2 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: true },
@@ -485,7 +488,8 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "پنجشنبه ۱۱ مرداد ۱۴۰۰",
+        day: [{ D: "پنجشنبه ۱۱ مرداد ۱۴۰۰", dayId: 3 }],
+
         clock: [
           { T: "10:00", isFree: false },
           { T: "10:30", isFree: true },
@@ -498,7 +502,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "شنبه ۱۳ مرداد ۱۴۰۰",
+        day: [{ D: "شنبه ۱۳ مرداد ۱۴۰۰", dayId: 4 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: true },
@@ -511,7 +515,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "یکشنبه ۱۴ مرداد ۱۴۰۰",
+        day: [{ D: "یکشنبه ۱۴ مرداد ۱۴۰۰", dayId: 5 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: false },
@@ -524,7 +528,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "دوشنبه ۱۵ مرداد ۱۴۰۰",
+        day: [{ D: "دوشنبه ۱۵ مرداد ۱۴۰۰", dayId: 6 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: true },
@@ -537,7 +541,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "سه شنبه ۱۶ مرداد ۱۴۰۰",
+        day: [{ D: "سه شنبه ۱۶ مرداد ۱۴۰۰", dayId: 7 }],
         clock: [
           { T: "10:00", isFree: false },
           { T: "10:30", isFree: false },
@@ -597,7 +601,7 @@ export const doctorsDetails = [
     ],
     times: [
       {
-        day: "سه شنبه ۹ مرداد ۱۴۰۰",
+        day: [{ D: "سه شنبه ۹ مرداد ۱۴۰۰", dayId: 1 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: true },
@@ -610,7 +614,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "چهارشنبه ۱۰ مرداد ۱۴۰۰",
+        day: [{ D: "چهارشنبه ۱۰ مرداد ۱۴۰۰", dayId: 2 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: true },
@@ -623,7 +627,8 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "پنجشنبه ۱۱ مرداد ۱۴۰۰",
+        day: [{ D: "پنجشنبه ۱۱ مرداد ۱۴۰۰", dayId: 3 }],
+
         clock: [
           { T: "10:00", isFree: false },
           { T: "10:30", isFree: true },
@@ -636,7 +641,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "شنبه ۱۳ مرداد ۱۴۰۰",
+        day: [{ D: "شنبه ۱۳ مرداد ۱۴۰۰", dayId: 4 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: true },
@@ -649,7 +654,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "یکشنبه ۱۴ مرداد ۱۴۰۰",
+        day: [{ D: "یکشنبه ۱۴ مرداد ۱۴۰۰", dayId: 5 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: false },
@@ -662,7 +667,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "دوشنبه ۱۵ مرداد ۱۴۰۰",
+        day: [{ D: "دوشنبه ۱۵ مرداد ۱۴۰۰", dayId: 6 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: true },
@@ -675,7 +680,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "سه شنبه ۱۶ مرداد ۱۴۰۰",
+        day: [{ D: "سه شنبه ۱۶ مرداد ۱۴۰۰", dayId: 7 }],
         clock: [
           { T: "10:00", isFree: false },
           { T: "10:30", isFree: false },
@@ -735,7 +740,7 @@ export const doctorsDetails = [
     ],
     times: [
       {
-        day: "سه شنبه ۹ مرداد ۱۴۰۰",
+        day: [{ D: "سه شنبه ۹ مرداد ۱۴۰۰", dayId: 1 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: true },
@@ -748,7 +753,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "چهارشنبه ۱۰ مرداد ۱۴۰۰",
+        day: [{ D: "چهارشنبه ۱۰ مرداد ۱۴۰۰", dayId: 2 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: true },
@@ -761,7 +766,8 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "پنجشنبه ۱۱ مرداد ۱۴۰۰",
+        day: [{ D: "پنجشنبه ۱۱ مرداد ۱۴۰۰", dayId: 3 }],
+
         clock: [
           { T: "10:00", isFree: false },
           { T: "10:30", isFree: true },
@@ -774,7 +780,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "شنبه ۱۳ مرداد ۱۴۰۰",
+        day: [{ D: "شنبه ۱۳ مرداد ۱۴۰۰", dayId: 4 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: true },
@@ -787,7 +793,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "یکشنبه ۱۴ مرداد ۱۴۰۰",
+        day: [{ D: "یکشنبه ۱۴ مرداد ۱۴۰۰", dayId: 5 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: false },
@@ -800,7 +806,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "دوشنبه ۱۵ مرداد ۱۴۰۰",
+        day: [{ D: "دوشنبه ۱۵ مرداد ۱۴۰۰", dayId: 6 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: true },
@@ -813,7 +819,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "سه شنبه ۱۶ مرداد ۱۴۰۰",
+        day: [{ D: "سه شنبه ۱۶ مرداد ۱۴۰۰", dayId: 7 }],
         clock: [
           { T: "10:00", isFree: false },
           { T: "10:30", isFree: false },
@@ -873,7 +879,7 @@ export const doctorsDetails = [
     ],
     times: [
       {
-        day: "سه شنبه ۹ مرداد ۱۴۰۰",
+        day: [{ D: "سه شنبه ۹ مرداد ۱۴۰۰", dayId: 1 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: true },
@@ -886,7 +892,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "چهارشنبه ۱۰ مرداد ۱۴۰۰",
+        day: [{ D: "چهارشنبه ۱۰ مرداد ۱۴۰۰", dayId: 2 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: true },
@@ -899,7 +905,8 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "پنجشنبه ۱۱ مرداد ۱۴۰۰",
+        day: [{ D: "پنجشنبه ۱۱ مرداد ۱۴۰۰", dayId: 3 }],
+
         clock: [
           { T: "10:00", isFree: false },
           { T: "10:30", isFree: true },
@@ -912,7 +919,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "شنبه ۱۳ مرداد ۱۴۰۰",
+        day: [{ D: "شنبه ۱۳ مرداد ۱۴۰۰", dayId: 4 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: true },
@@ -925,7 +932,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "یکشنبه ۱۴ مرداد ۱۴۰۰",
+        day: [{ D: "یکشنبه ۱۴ مرداد ۱۴۰۰", dayId: 5 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: false },
@@ -938,7 +945,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "دوشنبه ۱۵ مرداد ۱۴۰۰",
+        day: [{ D: "دوشنبه ۱۵ مرداد ۱۴۰۰", dayId: 6 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: true },
@@ -951,7 +958,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "سه شنبه ۱۶ مرداد ۱۴۰۰",
+        day: [{ D: "سه شنبه ۱۶ مرداد ۱۴۰۰", dayId: 7 }],
         clock: [
           { T: "10:00", isFree: false },
           { T: "10:30", isFree: false },
@@ -1011,7 +1018,7 @@ export const doctorsDetails = [
     ],
     times: [
       {
-        day: "سه شنبه ۹ مرداد ۱۴۰۰",
+        day: [{ D: "سه شنبه ۹ مرداد ۱۴۰۰", dayId: 1 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: true },
@@ -1024,7 +1031,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "چهارشنبه ۱۰ مرداد ۱۴۰۰",
+        day: [{ D: "چهارشنبه ۱۰ مرداد ۱۴۰۰", dayId: 2 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: true },
@@ -1037,7 +1044,8 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "پنجشنبه ۱۱ مرداد ۱۴۰۰",
+        day: [{ D: "پنجشنبه ۱۱ مرداد ۱۴۰۰", dayId: 3 }],
+
         clock: [
           { T: "10:00", isFree: false },
           { T: "10:30", isFree: true },
@@ -1050,7 +1058,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "شنبه ۱۳ مرداد ۱۴۰۰",
+        day: [{ D: "شنبه ۱۳ مرداد ۱۴۰۰", dayId: 4 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: true },
@@ -1063,7 +1071,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "یکشنبه ۱۴ مرداد ۱۴۰۰",
+        day: [{ D: "یکشنبه ۱۴ مرداد ۱۴۰۰", dayId: 5 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: false },
@@ -1076,7 +1084,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "دوشنبه ۱۵ مرداد ۱۴۰۰",
+        day: [{ D: "دوشنبه ۱۵ مرداد ۱۴۰۰", dayId: 6 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: true },
@@ -1089,7 +1097,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "سه شنبه ۱۶ مرداد ۱۴۰۰",
+        day: [{ D: "سه شنبه ۱۶ مرداد ۱۴۰۰", dayId: 7 }],
         clock: [
           { T: "10:00", isFree: false },
           { T: "10:30", isFree: false },
@@ -1149,7 +1157,7 @@ export const doctorsDetails = [
     ],
     times: [
       {
-        day: "سه شنبه ۹ مرداد ۱۴۰۰",
+        day: [{ D: "سه شنبه ۹ مرداد ۱۴۰۰", dayId: 1 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: true },
@@ -1162,7 +1170,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "چهارشنبه ۱۰ مرداد ۱۴۰۰",
+        day: [{ D: "چهارشنبه ۱۰ مرداد ۱۴۰۰", dayId: 2 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: true },
@@ -1175,7 +1183,8 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "پنجشنبه ۱۱ مرداد ۱۴۰۰",
+        day: [{ D: "پنجشنبه ۱۱ مرداد ۱۴۰۰", dayId: 3 }],
+
         clock: [
           { T: "10:00", isFree: false },
           { T: "10:30", isFree: true },
@@ -1188,7 +1197,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "شنبه ۱۳ مرداد ۱۴۰۰",
+        day: [{ D: "شنبه ۱۳ مرداد ۱۴۰۰", dayId: 4 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: true },
@@ -1201,7 +1210,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "یکشنبه ۱۴ مرداد ۱۴۰۰",
+        day: [{ D: "یکشنبه ۱۴ مرداد ۱۴۰۰", dayId: 5 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: false },
@@ -1214,7 +1223,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "دوشنبه ۱۵ مرداد ۱۴۰۰",
+        day: [{ D: "دوشنبه ۱۵ مرداد ۱۴۰۰", dayId: 6 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: true },
@@ -1227,7 +1236,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "سه شنبه ۱۶ مرداد ۱۴۰۰",
+        day: [{ D: "سه شنبه ۱۶ مرداد ۱۴۰۰", dayId: 7 }],
         clock: [
           { T: "10:00", isFree: false },
           { T: "10:30", isFree: false },
@@ -1287,7 +1296,7 @@ export const doctorsDetails = [
     ],
     times: [
       {
-        day: "سه شنبه ۹ مرداد ۱۴۰۰",
+        day: [{ D: "سه شنبه ۹ مرداد ۱۴۰۰", dayId: 1 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: true },
@@ -1300,7 +1309,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "چهارشنبه ۱۰ مرداد ۱۴۰۰",
+        day: [{ D: "چهارشنبه ۱۰ مرداد ۱۴۰۰", dayId: 2 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: true },
@@ -1313,7 +1322,8 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "پنجشنبه ۱۱ مرداد ۱۴۰۰",
+        day: [{ D: "پنجشنبه ۱۱ مرداد ۱۴۰۰", dayId: 3 }],
+
         clock: [
           { T: "10:00", isFree: false },
           { T: "10:30", isFree: true },
@@ -1326,7 +1336,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "شنبه ۱۳ مرداد ۱۴۰۰",
+        day: [{ D: "شنبه ۱۳ مرداد ۱۴۰۰", dayId: 4 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: true },
@@ -1339,7 +1349,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "یکشنبه ۱۴ مرداد ۱۴۰۰",
+        day: [{ D: "یکشنبه ۱۴ مرداد ۱۴۰۰", dayId: 5 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: false },
@@ -1352,7 +1362,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "دوشنبه ۱۵ مرداد ۱۴۰۰",
+        day: [{ D: "دوشنبه ۱۵ مرداد ۱۴۰۰", dayId: 6 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: true },
@@ -1365,7 +1375,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "سه شنبه ۱۶ مرداد ۱۴۰۰",
+        day: [{ D: "سه شنبه ۱۶ مرداد ۱۴۰۰", dayId: 7 }],
         clock: [
           { T: "10:00", isFree: false },
           { T: "10:30", isFree: false },
@@ -1425,7 +1435,7 @@ export const doctorsDetails = [
     ],
     times: [
       {
-        day: "سه شنبه ۹ مرداد ۱۴۰۰",
+        day: [{ D: "سه شنبه ۹ مرداد ۱۴۰۰", dayId: 1 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: true },
@@ -1438,7 +1448,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "چهارشنبه ۱۰ مرداد ۱۴۰۰",
+        day: [{ D: "چهارشنبه ۱۰ مرداد ۱۴۰۰", dayId: 2 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: true },
@@ -1451,7 +1461,8 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "پنجشنبه ۱۱ مرداد ۱۴۰۰",
+        day: [{ D: "پنجشنبه ۱۱ مرداد ۱۴۰۰", dayId: 3 }],
+
         clock: [
           { T: "10:00", isFree: false },
           { T: "10:30", isFree: true },
@@ -1464,7 +1475,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "شنبه ۱۳ مرداد ۱۴۰۰",
+        day: [{ D: "شنبه ۱۳ مرداد ۱۴۰۰", dayId: 4 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: true },
@@ -1477,7 +1488,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "یکشنبه ۱۴ مرداد ۱۴۰۰",
+        day: [{ D: "یکشنبه ۱۴ مرداد ۱۴۰۰", dayId: 5 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: false },
@@ -1490,7 +1501,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "دوشنبه ۱۵ مرداد ۱۴۰۰",
+        day: [{ D: "دوشنبه ۱۵ مرداد ۱۴۰۰", dayId: 6 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: true },
@@ -1503,7 +1514,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "سه شنبه ۱۶ مرداد ۱۴۰۰",
+        day: [{ D: "سه شنبه ۱۶ مرداد ۱۴۰۰", dayId: 7 }],
         clock: [
           { T: "10:00", isFree: false },
           { T: "10:30", isFree: false },
@@ -1563,7 +1574,7 @@ export const doctorsDetails = [
     ],
     times: [
       {
-        day: "سه شنبه ۹ مرداد ۱۴۰۰",
+        day: [{ D: "سه شنبه ۹ مرداد ۱۴۰۰", dayId: 1 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: true },
@@ -1576,7 +1587,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "چهارشنبه ۱۰ مرداد ۱۴۰۰",
+        day: [{ D: "چهارشنبه ۱۰ مرداد ۱۴۰۰", dayId: 2 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: true },
@@ -1589,7 +1600,8 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "پنجشنبه ۱۱ مرداد ۱۴۰۰",
+        day: [{ D: "پنجشنبه ۱۱ مرداد ۱۴۰۰", dayId: 3 }],
+
         clock: [
           { T: "10:00", isFree: false },
           { T: "10:30", isFree: true },
@@ -1602,7 +1614,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "شنبه ۱۳ مرداد ۱۴۰۰",
+        day: [{ D: "شنبه ۱۳ مرداد ۱۴۰۰", dayId: 4 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: true },
@@ -1615,7 +1627,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "یکشنبه ۱۴ مرداد ۱۴۰۰",
+        day: [{ D: "یکشنبه ۱۴ مرداد ۱۴۰۰", dayId: 5 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: false },
@@ -1628,7 +1640,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "دوشنبه ۱۵ مرداد ۱۴۰۰",
+        day: [{ D: "دوشنبه ۱۵ مرداد ۱۴۰۰", dayId: 6 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: true },
@@ -1641,7 +1653,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "سه شنبه ۱۶ مرداد ۱۴۰۰",
+        day: [{ D: "سه شنبه ۱۶ مرداد ۱۴۰۰", dayId: 7 }],
         clock: [
           { T: "10:00", isFree: false },
           { T: "10:30", isFree: false },
@@ -1701,7 +1713,7 @@ export const doctorsDetails = [
     ],
     times: [
       {
-        day: "سه شنبه ۹ مرداد ۱۴۰۰",
+        day: [{ D: "سه شنبه ۹ مرداد ۱۴۰۰", dayId: 1 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: true },
@@ -1714,7 +1726,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "چهارشنبه ۱۰ مرداد ۱۴۰۰",
+        day: [{ D: "چهارشنبه ۱۰ مرداد ۱۴۰۰", dayId: 2 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: true },
@@ -1727,7 +1739,8 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "پنجشنبه ۱۱ مرداد ۱۴۰۰",
+        day: [{ D: "پنجشنبه ۱۱ مرداد ۱۴۰۰", dayId: 3 }],
+
         clock: [
           { T: "10:00", isFree: false },
           { T: "10:30", isFree: true },
@@ -1740,7 +1753,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "شنبه ۱۳ مرداد ۱۴۰۰",
+        day: [{ D: "شنبه ۱۳ مرداد ۱۴۰۰", dayId: 4 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: true },
@@ -1753,7 +1766,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "یکشنبه ۱۴ مرداد ۱۴۰۰",
+        day: [{ D: "یکشنبه ۱۴ مرداد ۱۴۰۰", dayId: 5 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: false },
@@ -1766,7 +1779,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "دوشنبه ۱۵ مرداد ۱۴۰۰",
+        day: [{ D: "دوشنبه ۱۵ مرداد ۱۴۰۰", dayId: 6 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: true },
@@ -1779,7 +1792,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "سه شنبه ۱۶ مرداد ۱۴۰۰",
+        day: [{ D: "سه شنبه ۱۶ مرداد ۱۴۰۰", dayId: 7 }],
         clock: [
           { T: "10:00", isFree: false },
           { T: "10:30", isFree: false },
@@ -1839,7 +1852,7 @@ export const doctorsDetails = [
     ],
     times: [
       {
-        day: "سه شنبه ۹ مرداد ۱۴۰۰",
+        day: [{ D: "سه شنبه ۹ مرداد ۱۴۰۰", dayId: 1 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: true },
@@ -1852,7 +1865,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "چهارشنبه ۱۰ مرداد ۱۴۰۰",
+        day: [{ D: "چهارشنبه ۱۰ مرداد ۱۴۰۰", dayId: 2 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: true },
@@ -1865,7 +1878,8 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "پنجشنبه ۱۱ مرداد ۱۴۰۰",
+        day: [{ D: "پنجشنبه ۱۱ مرداد ۱۴۰۰", dayId: 3 }],
+
         clock: [
           { T: "10:00", isFree: false },
           { T: "10:30", isFree: true },
@@ -1878,7 +1892,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "شنبه ۱۳ مرداد ۱۴۰۰",
+        day: [{ D: "شنبه ۱۳ مرداد ۱۴۰۰", dayId: 4 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: true },
@@ -1891,7 +1905,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "یکشنبه ۱۴ مرداد ۱۴۰۰",
+        day: [{ D: "یکشنبه ۱۴ مرداد ۱۴۰۰", dayId: 5 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: false },
@@ -1904,7 +1918,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "دوشنبه ۱۵ مرداد ۱۴۰۰",
+        day: [{ D: "دوشنبه ۱۵ مرداد ۱۴۰۰", dayId: 6 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: true },
@@ -1917,7 +1931,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "سه شنبه ۱۶ مرداد ۱۴۰۰",
+        day: [{ D: "سه شنبه ۱۶ مرداد ۱۴۰۰", dayId: 7 }],
         clock: [
           { T: "10:00", isFree: false },
           { T: "10:30", isFree: false },
@@ -1977,7 +1991,7 @@ export const doctorsDetails = [
     ],
     times: [
       {
-        day: "سه شنبه ۹ مرداد ۱۴۰۰",
+        day: [{ D: "سه شنبه ۹ مرداد ۱۴۰۰", dayId: 1 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: true },
@@ -1990,7 +2004,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "چهارشنبه ۱۰ مرداد ۱۴۰۰",
+        day: [{ D: "چهارشنبه ۱۰ مرداد ۱۴۰۰", dayId: 2 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: true },
@@ -2003,7 +2017,8 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "پنجشنبه ۱۱ مرداد ۱۴۰۰",
+        day: [{ D: "پنجشنبه ۱۱ مرداد ۱۴۰۰", dayId: 3 }],
+
         clock: [
           { T: "10:00", isFree: false },
           { T: "10:30", isFree: true },
@@ -2016,7 +2031,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "شنبه ۱۳ مرداد ۱۴۰۰",
+        day: [{ D: "شنبه ۱۳ مرداد ۱۴۰۰", dayId: 4 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: true },
@@ -2029,7 +2044,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "یکشنبه ۱۴ مرداد ۱۴۰۰",
+        day: [{ D: "یکشنبه ۱۴ مرداد ۱۴۰۰", dayId: 5 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: false },
@@ -2042,7 +2057,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "دوشنبه ۱۵ مرداد ۱۴۰۰",
+        day: [{ D: "دوشنبه ۱۵ مرداد ۱۴۰۰", dayId: 6 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: true },
@@ -2055,7 +2070,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "سه شنبه ۱۶ مرداد ۱۴۰۰",
+        day: [{ D: "سه شنبه ۱۶ مرداد ۱۴۰۰", dayId: 7 }],
         clock: [
           { T: "10:00", isFree: false },
           { T: "10:30", isFree: false },
@@ -2115,7 +2130,7 @@ export const doctorsDetails = [
     ],
     times: [
       {
-        day: "سه شنبه ۹ مرداد ۱۴۰۰",
+        day: [{ D: "سه شنبه ۹ مرداد ۱۴۰۰", dayId: 1 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: true },
@@ -2128,7 +2143,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "چهارشنبه ۱۰ مرداد ۱۴۰۰",
+        day: [{ D: "چهارشنبه ۱۰ مرداد ۱۴۰۰", dayId: 2 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: true },
@@ -2141,7 +2156,8 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "پنجشنبه ۱۱ مرداد ۱۴۰۰",
+        day: [{ D: "پنجشنبه ۱۱ مرداد ۱۴۰۰", dayId: 3 }],
+
         clock: [
           { T: "10:00", isFree: false },
           { T: "10:30", isFree: true },
@@ -2154,7 +2170,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "شنبه ۱۳ مرداد ۱۴۰۰",
+        day: [{ D: "شنبه ۱۳ مرداد ۱۴۰۰", dayId: 4 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: true },
@@ -2167,7 +2183,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "یکشنبه ۱۴ مرداد ۱۴۰۰",
+        day: [{ D: "یکشنبه ۱۴ مرداد ۱۴۰۰", dayId: 5 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: false },
@@ -2180,7 +2196,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "دوشنبه ۱۵ مرداد ۱۴۰۰",
+        day: [{ D: "دوشنبه ۱۵ مرداد ۱۴۰۰", dayId: 6 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: true },
@@ -2193,7 +2209,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "سه شنبه ۱۶ مرداد ۱۴۰۰",
+        day: [{ D: "سه شنبه ۱۶ مرداد ۱۴۰۰", dayId: 7 }],
         clock: [
           { T: "10:00", isFree: false },
           { T: "10:30", isFree: false },
@@ -2253,7 +2269,7 @@ export const doctorsDetails = [
     ],
     times: [
       {
-        day: "سه شنبه ۹ مرداد ۱۴۰۰",
+        day: [{ D: "سه شنبه ۹ مرداد ۱۴۰۰", dayId: 1 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: true },
@@ -2266,7 +2282,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "چهارشنبه ۱۰ مرداد ۱۴۰۰",
+        day: [{ D: "چهارشنبه ۱۰ مرداد ۱۴۰۰", dayId: 2 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: true },
@@ -2279,7 +2295,8 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "پنجشنبه ۱۱ مرداد ۱۴۰۰",
+        day: [{ D: "پنجشنبه ۱۱ مرداد ۱۴۰۰", dayId: 3 }],
+
         clock: [
           { T: "10:00", isFree: false },
           { T: "10:30", isFree: true },
@@ -2292,7 +2309,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "شنبه ۱۳ مرداد ۱۴۰۰",
+        day: [{ D: "شنبه ۱۳ مرداد ۱۴۰۰", dayId: 4 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: true },
@@ -2305,7 +2322,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "یکشنبه ۱۴ مرداد ۱۴۰۰",
+        day: [{ D: "یکشنبه ۱۴ مرداد ۱۴۰۰", dayId: 5 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: false },
@@ -2318,7 +2335,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "دوشنبه ۱۵ مرداد ۱۴۰۰",
+        day: [{ D: "دوشنبه ۱۵ مرداد ۱۴۰۰", dayId: 6 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: true },
@@ -2331,7 +2348,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "سه شنبه ۱۶ مرداد ۱۴۰۰",
+        day: [{ D: "سه شنبه ۱۶ مرداد ۱۴۰۰", dayId: 7 }],
         clock: [
           { T: "10:00", isFree: false },
           { T: "10:30", isFree: false },
@@ -2391,7 +2408,7 @@ export const doctorsDetails = [
     ],
     times: [
       {
-        day: "سه شنبه ۹ مرداد ۱۴۰۰",
+        day: [{ D: "سه شنبه ۹ مرداد ۱۴۰۰", dayId: 1 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: true },
@@ -2404,7 +2421,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "چهارشنبه ۱۰ مرداد ۱۴۰۰",
+        day: [{ D: "چهارشنبه ۱۰ مرداد ۱۴۰۰", dayId: 2 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: true },
@@ -2417,7 +2434,8 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "پنجشنبه ۱۱ مرداد ۱۴۰۰",
+        day: [{ D: "پنجشنبه ۱۱ مرداد ۱۴۰۰", dayId: 3 }],
+
         clock: [
           { T: "10:00", isFree: false },
           { T: "10:30", isFree: true },
@@ -2430,7 +2448,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "شنبه ۱۳ مرداد ۱۴۰۰",
+        day: [{ D: "شنبه ۱۳ مرداد ۱۴۰۰", dayId: 4 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: true },
@@ -2443,7 +2461,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "یکشنبه ۱۴ مرداد ۱۴۰۰",
+        day: [{ D: "یکشنبه ۱۴ مرداد ۱۴۰۰", dayId: 5 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: false },
@@ -2456,7 +2474,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "دوشنبه ۱۵ مرداد ۱۴۰۰",
+        day: [{ D: "دوشنبه ۱۵ مرداد ۱۴۰۰", dayId: 6 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: true },
@@ -2469,7 +2487,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "سه شنبه ۱۶ مرداد ۱۴۰۰",
+        day: [{ D: "سه شنبه ۱۶ مرداد ۱۴۰۰", dayId: 7 }],
         clock: [
           { T: "10:00", isFree: false },
           { T: "10:30", isFree: false },
@@ -2529,7 +2547,7 @@ export const doctorsDetails = [
     ],
     times: [
       {
-        day: "سه شنبه ۹ مرداد ۱۴۰۰",
+        day: [{ D: "سه شنبه ۹ مرداد ۱۴۰۰", dayId: 1 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: true },
@@ -2542,7 +2560,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "چهارشنبه ۱۰ مرداد ۱۴۰۰",
+        day: [{ D: "چهارشنبه ۱۰ مرداد ۱۴۰۰", dayId: 2 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: true },
@@ -2555,7 +2573,8 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "پنجشنبه ۱۱ مرداد ۱۴۰۰",
+        day: [{ D: "پنجشنبه ۱۱ مرداد ۱۴۰۰", dayId: 3 }],
+
         clock: [
           { T: "10:00", isFree: false },
           { T: "10:30", isFree: true },
@@ -2568,7 +2587,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "شنبه ۱۳ مرداد ۱۴۰۰",
+        day: [{ D: "شنبه ۱۳ مرداد ۱۴۰۰", dayId: 4 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: true },
@@ -2581,7 +2600,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "یکشنبه ۱۴ مرداد ۱۴۰۰",
+        day: [{ D: "یکشنبه ۱۴ مرداد ۱۴۰۰", dayId: 5 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: false },
@@ -2594,7 +2613,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "دوشنبه ۱۵ مرداد ۱۴۰۰",
+        day: [{ D: "دوشنبه ۱۵ مرداد ۱۴۰۰", dayId: 6 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: true },
@@ -2607,7 +2626,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "سه شنبه ۱۶ مرداد ۱۴۰۰",
+        day: [{ D: "سه شنبه ۱۶ مرداد ۱۴۰۰", dayId: 7 }],
         clock: [
           { T: "10:00", isFree: false },
           { T: "10:30", isFree: false },
@@ -2667,7 +2686,7 @@ export const doctorsDetails = [
     ],
     times: [
       {
-        day: "سه شنبه ۹ مرداد ۱۴۰۰",
+        day: [{ D: "سه شنبه ۹ مرداد ۱۴۰۰", dayId: 1 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: true },
@@ -2680,7 +2699,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "چهارشنبه ۱۰ مرداد ۱۴۰۰",
+        day: [{ D: "چهارشنبه ۱۰ مرداد ۱۴۰۰", dayId: 2 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: true },
@@ -2693,7 +2712,8 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "پنجشنبه ۱۱ مرداد ۱۴۰۰",
+        day: [{ D: "پنجشنبه ۱۱ مرداد ۱۴۰۰", dayId: 3 }],
+
         clock: [
           { T: "10:00", isFree: false },
           { T: "10:30", isFree: true },
@@ -2706,7 +2726,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "شنبه ۱۳ مرداد ۱۴۰۰",
+        day: [{ D: "شنبه ۱۳ مرداد ۱۴۰۰", dayId: 4 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: true },
@@ -2719,7 +2739,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "یکشنبه ۱۴ مرداد ۱۴۰۰",
+        day: [{ D: "یکشنبه ۱۴ مرداد ۱۴۰۰", dayId: 5 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: false },
@@ -2732,7 +2752,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "دوشنبه ۱۵ مرداد ۱۴۰۰",
+        day: [{ D: "دوشنبه ۱۵ مرداد ۱۴۰۰", dayId: 6 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: true },
@@ -2745,7 +2765,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "سه شنبه ۱۶ مرداد ۱۴۰۰",
+        day: [{ D: "سه شنبه ۱۶ مرداد ۱۴۰۰", dayId: 7 }],
         clock: [
           { T: "10:00", isFree: false },
           { T: "10:30", isFree: false },
@@ -2805,7 +2825,7 @@ export const doctorsDetails = [
     ],
     times: [
       {
-        day: "سه شنبه ۹ مرداد ۱۴۰۰",
+        day: [{ D: "سه شنبه ۹ مرداد ۱۴۰۰", dayId: 1 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: true },
@@ -2818,7 +2838,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "چهارشنبه ۱۰ مرداد ۱۴۰۰",
+        day: [{ D: "چهارشنبه ۱۰ مرداد ۱۴۰۰", dayId: 2 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: true },
@@ -2831,7 +2851,8 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "پنجشنبه ۱۱ مرداد ۱۴۰۰",
+        day: [{ D: "پنجشنبه ۱۱ مرداد ۱۴۰۰", dayId: 3 }],
+
         clock: [
           { T: "10:00", isFree: false },
           { T: "10:30", isFree: true },
@@ -2844,7 +2865,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "شنبه ۱۳ مرداد ۱۴۰۰",
+        day: [{ D: "شنبه ۱۳ مرداد ۱۴۰۰", dayId: 4 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: true },
@@ -2857,7 +2878,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "یکشنبه ۱۴ مرداد ۱۴۰۰",
+        day: [{ D: "یکشنبه ۱۴ مرداد ۱۴۰۰", dayId: 5 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: false },
@@ -2870,7 +2891,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "دوشنبه ۱۵ مرداد ۱۴۰۰",
+        day: [{ D: "دوشنبه ۱۵ مرداد ۱۴۰۰", dayId: 6 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: true },
@@ -2883,7 +2904,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "سه شنبه ۱۶ مرداد ۱۴۰۰",
+        day: [{ D: "سه شنبه ۱۶ مرداد ۱۴۰۰", dayId: 7 }],
         clock: [
           { T: "10:00", isFree: false },
           { T: "10:30", isFree: false },
@@ -2943,7 +2964,7 @@ export const doctorsDetails = [
     ],
     times: [
       {
-        day: "سه شنبه ۹ مرداد ۱۴۰۰",
+        day: [{ D: "سه شنبه ۹ مرداد ۱۴۰۰", dayId: 1 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: true },
@@ -2956,7 +2977,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "چهارشنبه ۱۰ مرداد ۱۴۰۰",
+        day: [{ D: "چهارشنبه ۱۰ مرداد ۱۴۰۰", dayId: 2 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: true },
@@ -2969,7 +2990,8 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "پنجشنبه ۱۱ مرداد ۱۴۰۰",
+        day: [{ D: "پنجشنبه ۱۱ مرداد ۱۴۰۰", dayId: 3 }],
+
         clock: [
           { T: "10:00", isFree: false },
           { T: "10:30", isFree: true },
@@ -2982,7 +3004,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "شنبه ۱۳ مرداد ۱۴۰۰",
+        day: [{ D: "شنبه ۱۳ مرداد ۱۴۰۰", dayId: 4 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: true },
@@ -2995,7 +3017,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "یکشنبه ۱۴ مرداد ۱۴۰۰",
+        day: [{ D: "یکشنبه ۱۴ مرداد ۱۴۰۰", dayId: 5 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: false },
@@ -3008,7 +3030,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "دوشنبه ۱۵ مرداد ۱۴۰۰",
+        day: [{ D: "دوشنبه ۱۵ مرداد ۱۴۰۰", dayId: 6 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: true },
@@ -3021,7 +3043,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "سه شنبه ۱۶ مرداد ۱۴۰۰",
+        day: [{ D: "سه شنبه ۱۶ مرداد ۱۴۰۰", dayId: 7 }],
         clock: [
           { T: "10:00", isFree: false },
           { T: "10:30", isFree: false },
@@ -3081,7 +3103,7 @@ export const doctorsDetails = [
     ],
     times: [
       {
-        day: "سه شنبه ۹ مرداد ۱۴۰۰",
+        day: [{ D: "سه شنبه ۹ مرداد ۱۴۰۰", dayId: 1 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: true },
@@ -3094,7 +3116,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "چهارشنبه ۱۰ مرداد ۱۴۰۰",
+        day: [{ D: "چهارشنبه ۱۰ مرداد ۱۴۰۰", dayId: 2 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: true },
@@ -3107,7 +3129,8 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "پنجشنبه ۱۱ مرداد ۱۴۰۰",
+        day: [{ D: "پنجشنبه ۱۱ مرداد ۱۴۰۰", dayId: 3 }],
+
         clock: [
           { T: "10:00", isFree: false },
           { T: "10:30", isFree: true },
@@ -3120,7 +3143,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "شنبه ۱۳ مرداد ۱۴۰۰",
+        day: [{ D: "شنبه ۱۳ مرداد ۱۴۰۰", dayId: 4 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: true },
@@ -3133,7 +3156,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "یکشنبه ۱۴ مرداد ۱۴۰۰",
+        day: [{ D: "یکشنبه ۱۴ مرداد ۱۴۰۰", dayId: 5 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: false },
@@ -3146,7 +3169,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "دوشنبه ۱۵ مرداد ۱۴۰۰",
+        day: [{ D: "دوشنبه ۱۵ مرداد ۱۴۰۰", dayId: 6 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: true },
@@ -3159,7 +3182,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "سه شنبه ۱۶ مرداد ۱۴۰۰",
+        day: [{ D: "سه شنبه ۱۶ مرداد ۱۴۰۰", dayId: 7 }],
         clock: [
           { T: "10:00", isFree: false },
           { T: "10:30", isFree: false },
@@ -3219,7 +3242,7 @@ export const doctorsDetails = [
     ],
     times: [
       {
-        day: "سه شنبه ۹ مرداد ۱۴۰۰",
+        day: [{ D: "سه شنبه ۹ مرداد ۱۴۰۰", dayId: 1 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: true },
@@ -3232,7 +3255,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "چهارشنبه ۱۰ مرداد ۱۴۰۰",
+        day: [{ D: "چهارشنبه ۱۰ مرداد ۱۴۰۰", dayId: 2 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: true },
@@ -3245,7 +3268,8 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "پنجشنبه ۱۱ مرداد ۱۴۰۰",
+        day: [{ D: "پنجشنبه ۱۱ مرداد ۱۴۰۰", dayId: 3 }],
+
         clock: [
           { T: "10:00", isFree: false },
           { T: "10:30", isFree: true },
@@ -3258,7 +3282,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "شنبه ۱۳ مرداد ۱۴۰۰",
+        day: [{ D: "شنبه ۱۳ مرداد ۱۴۰۰", dayId: 4 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: true },
@@ -3271,7 +3295,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "یکشنبه ۱۴ مرداد ۱۴۰۰",
+        day: [{ D: "یکشنبه ۱۴ مرداد ۱۴۰۰", dayId: 5 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: false },
@@ -3284,7 +3308,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "دوشنبه ۱۵ مرداد ۱۴۰۰",
+        day: [{ D: "دوشنبه ۱۵ مرداد ۱۴۰۰", dayId: 6 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: true },
@@ -3297,7 +3321,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "سه شنبه ۱۶ مرداد ۱۴۰۰",
+        day: [{ D: "سه شنبه ۱۶ مرداد ۱۴۰۰", dayId: 7 }],
         clock: [
           { T: "10:00", isFree: false },
           { T: "10:30", isFree: false },
@@ -3357,7 +3381,7 @@ export const doctorsDetails = [
     ],
     times: [
       {
-        day: "سه شنبه ۹ مرداد ۱۴۰۰",
+        day: [{ D: "سه شنبه ۹ مرداد ۱۴۰۰", dayId: 1 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: true },
@@ -3370,7 +3394,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "چهارشنبه ۱۰ مرداد ۱۴۰۰",
+        day: [{ D: "چهارشنبه ۱۰ مرداد ۱۴۰۰", dayId: 2 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: true },
@@ -3383,7 +3407,8 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "پنجشنبه ۱۱ مرداد ۱۴۰۰",
+        day: [{ D: "پنجشنبه ۱۱ مرداد ۱۴۰۰", dayId: 3 }],
+
         clock: [
           { T: "10:00", isFree: false },
           { T: "10:30", isFree: true },
@@ -3396,7 +3421,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "شنبه ۱۳ مرداد ۱۴۰۰",
+        day: [{ D: "شنبه ۱۳ مرداد ۱۴۰۰", dayId: 4 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: true },
@@ -3409,7 +3434,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "یکشنبه ۱۴ مرداد ۱۴۰۰",
+        day: [{ D: "یکشنبه ۱۴ مرداد ۱۴۰۰", dayId: 5 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: false },
@@ -3422,7 +3447,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "دوشنبه ۱۵ مرداد ۱۴۰۰",
+        day: [{ D: "دوشنبه ۱۵ مرداد ۱۴۰۰", dayId: 6 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: true },
@@ -3435,7 +3460,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "سه شنبه ۱۶ مرداد ۱۴۰۰",
+        day: [{ D: "سه شنبه ۱۶ مرداد ۱۴۰۰", dayId: 7 }],
         clock: [
           { T: "10:00", isFree: false },
           { T: "10:30", isFree: false },
@@ -3495,7 +3520,7 @@ export const doctorsDetails = [
     ],
     times: [
       {
-        day: "سه شنبه ۹ مرداد ۱۴۰۰",
+        day: [{ D: "سه شنبه ۹ مرداد ۱۴۰۰", dayId: 1 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: true },
@@ -3508,7 +3533,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "چهارشنبه ۱۰ مرداد ۱۴۰۰",
+        day: [{ D: "چهارشنبه ۱۰ مرداد ۱۴۰۰", dayId: 2 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: true },
@@ -3521,7 +3546,8 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "پنجشنبه ۱۱ مرداد ۱۴۰۰",
+        day: [{ D: "پنجشنبه ۱۱ مرداد ۱۴۰۰", dayId: 3 }],
+
         clock: [
           { T: "10:00", isFree: false },
           { T: "10:30", isFree: true },
@@ -3534,7 +3560,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "شنبه ۱۳ مرداد ۱۴۰۰",
+        day: [{ D: "شنبه ۱۳ مرداد ۱۴۰۰", dayId: 4 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: true },
@@ -3547,7 +3573,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "یکشنبه ۱۴ مرداد ۱۴۰۰",
+        day: [{ D: "یکشنبه ۱۴ مرداد ۱۴۰۰", dayId: 5 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: false },
@@ -3560,7 +3586,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "دوشنبه ۱۵ مرداد ۱۴۰۰",
+        day: [{ D: "دوشنبه ۱۵ مرداد ۱۴۰۰", dayId: 6 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: true },
@@ -3573,7 +3599,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "سه شنبه ۱۶ مرداد ۱۴۰۰",
+        day: [{ D: "سه شنبه ۱۶ مرداد ۱۴۰۰", dayId: 7 }],
         clock: [
           { T: "10:00", isFree: false },
           { T: "10:30", isFree: false },
@@ -3633,7 +3659,7 @@ export const doctorsDetails = [
     ],
     times: [
       {
-        day: "سه شنبه ۹ مرداد ۱۴۰۰",
+        day: [{ D: "سه شنبه ۹ مرداد ۱۴۰۰", dayId: 1 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: true },
@@ -3646,7 +3672,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "چهارشنبه ۱۰ مرداد ۱۴۰۰",
+        day: [{ D: "چهارشنبه ۱۰ مرداد ۱۴۰۰", dayId: 2 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: true },
@@ -3659,7 +3685,8 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "پنجشنبه ۱۱ مرداد ۱۴۰۰",
+        day: [{ D: "پنجشنبه ۱۱ مرداد ۱۴۰۰", dayId: 3 }],
+
         clock: [
           { T: "10:00", isFree: false },
           { T: "10:30", isFree: true },
@@ -3672,7 +3699,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "شنبه ۱۳ مرداد ۱۴۰۰",
+        day: [{ D: "شنبه ۱۳ مرداد ۱۴۰۰", dayId: 4 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: true },
@@ -3685,7 +3712,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "یکشنبه ۱۴ مرداد ۱۴۰۰",
+        day: [{ D: "یکشنبه ۱۴ مرداد ۱۴۰۰", dayId: 5 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: false },
@@ -3698,7 +3725,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "دوشنبه ۱۵ مرداد ۱۴۰۰",
+        day: [{ D: "دوشنبه ۱۵ مرداد ۱۴۰۰", dayId: 6 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: true },
@@ -3711,7 +3738,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "سه شنبه ۱۶ مرداد ۱۴۰۰",
+        day: [{ D: "سه شنبه ۱۶ مرداد ۱۴۰۰", dayId: 7 }],
         clock: [
           { T: "10:00", isFree: false },
           { T: "10:30", isFree: false },
@@ -3771,7 +3798,7 @@ export const doctorsDetails = [
     ],
     times: [
       {
-        day: "سه شنبه ۹ مرداد ۱۴۰۰",
+        day: [{ D: "سه شنبه ۹ مرداد ۱۴۰۰", dayId: 1 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: true },
@@ -3784,7 +3811,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "چهارشنبه ۱۰ مرداد ۱۴۰۰",
+        day: [{ D: "چهارشنبه ۱۰ مرداد ۱۴۰۰", dayId: 2 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: true },
@@ -3797,7 +3824,8 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "پنجشنبه ۱۱ مرداد ۱۴۰۰",
+        day: [{ D: "پنجشنبه ۱۱ مرداد ۱۴۰۰", dayId: 3 }],
+
         clock: [
           { T: "10:00", isFree: false },
           { T: "10:30", isFree: true },
@@ -3810,7 +3838,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "شنبه ۱۳ مرداد ۱۴۰۰",
+        day: [{ D: "شنبه ۱۳ مرداد ۱۴۰۰", dayId: 4 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: true },
@@ -3823,7 +3851,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "یکشنبه ۱۴ مرداد ۱۴۰۰",
+        day: [{ D: "یکشنبه ۱۴ مرداد ۱۴۰۰", dayId: 5 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: false },
@@ -3836,7 +3864,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "دوشنبه ۱۵ مرداد ۱۴۰۰",
+        day: [{ D: "دوشنبه ۱۵ مرداد ۱۴۰۰", dayId: 6 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: true },
@@ -3849,7 +3877,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "سه شنبه ۱۶ مرداد ۱۴۰۰",
+        day: [{ D: "سه شنبه ۱۶ مرداد ۱۴۰۰", dayId: 7 }],
         clock: [
           { T: "10:00", isFree: false },
           { T: "10:30", isFree: false },
@@ -3909,7 +3937,7 @@ export const doctorsDetails = [
     ],
     times: [
       {
-        day: "سه شنبه ۹ مرداد ۱۴۰۰",
+        day: [{ D: "سه شنبه ۹ مرداد ۱۴۰۰", dayId: 1 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: true },
@@ -3922,7 +3950,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "چهارشنبه ۱۰ مرداد ۱۴۰۰",
+        day: [{ D: "چهارشنبه ۱۰ مرداد ۱۴۰۰", dayId: 2 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: true },
@@ -3935,7 +3963,8 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "پنجشنبه ۱۱ مرداد ۱۴۰۰",
+        day: [{ D: "پنجشنبه ۱۱ مرداد ۱۴۰۰", dayId: 3 }],
+
         clock: [
           { T: "10:00", isFree: false },
           { T: "10:30", isFree: true },
@@ -3948,7 +3977,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "شنبه ۱۳ مرداد ۱۴۰۰",
+        day: [{ D: "شنبه ۱۳ مرداد ۱۴۰۰", dayId: 4 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: true },
@@ -3961,7 +3990,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "یکشنبه ۱۴ مرداد ۱۴۰۰",
+        day: [{ D: "یکشنبه ۱۴ مرداد ۱۴۰۰", dayId: 5 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: false },
@@ -3974,7 +4003,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "دوشنبه ۱۵ مرداد ۱۴۰۰",
+        day: [{ D: "دوشنبه ۱۵ مرداد ۱۴۰۰", dayId: 6 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: true },
@@ -3987,7 +4016,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "سه شنبه ۱۶ مرداد ۱۴۰۰",
+        day: [{ D: "سه شنبه ۱۶ مرداد ۱۴۰۰", dayId: 7 }],
         clock: [
           { T: "10:00", isFree: false },
           { T: "10:30", isFree: false },
@@ -4047,7 +4076,7 @@ export const doctorsDetails = [
     ],
     times: [
       {
-        day: "سه شنبه ۹ مرداد ۱۴۰۰",
+        day: [{ D: "سه شنبه ۹ مرداد ۱۴۰۰", dayId: 1 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: true },
@@ -4060,7 +4089,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "چهارشنبه ۱۰ مرداد ۱۴۰۰",
+        day: [{ D: "چهارشنبه ۱۰ مرداد ۱۴۰۰", dayId: 2 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: true },
@@ -4073,7 +4102,8 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "پنجشنبه ۱۱ مرداد ۱۴۰۰",
+        day: [{ D: "پنجشنبه ۱۱ مرداد ۱۴۰۰", dayId: 3 }],
+
         clock: [
           { T: "10:00", isFree: false },
           { T: "10:30", isFree: true },
@@ -4086,7 +4116,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "شنبه ۱۳ مرداد ۱۴۰۰",
+        day: [{ D: "شنبه ۱۳ مرداد ۱۴۰۰", dayId: 4 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: true },
@@ -4099,7 +4129,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "یکشنبه ۱۴ مرداد ۱۴۰۰",
+        day: [{ D: "یکشنبه ۱۴ مرداد ۱۴۰۰", dayId: 5 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: false },
@@ -4112,7 +4142,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "دوشنبه ۱۵ مرداد ۱۴۰۰",
+        day: [{ D: "دوشنبه ۱۵ مرداد ۱۴۰۰", dayId: 6 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: true },
@@ -4125,7 +4155,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "سه شنبه ۱۶ مرداد ۱۴۰۰",
+        day: [{ D: "سه شنبه ۱۶ مرداد ۱۴۰۰", dayId: 7 }],
         clock: [
           { T: "10:00", isFree: false },
           { T: "10:30", isFree: false },
@@ -4185,7 +4215,7 @@ export const doctorsDetails = [
     ],
     times: [
       {
-        day: "سه شنبه ۹ مرداد ۱۴۰۰",
+        day: [{ D: "سه شنبه ۹ مرداد ۱۴۰۰", dayId: 1 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: true },
@@ -4198,7 +4228,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "چهارشنبه ۱۰ مرداد ۱۴۰۰",
+        day: [{ D: "چهارشنبه ۱۰ مرداد ۱۴۰۰", dayId: 2 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: true },
@@ -4211,7 +4241,8 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "پنجشنبه ۱۱ مرداد ۱۴۰۰",
+        day: [{ D: "پنجشنبه ۱۱ مرداد ۱۴۰۰", dayId: 3 }],
+
         clock: [
           { T: "10:00", isFree: false },
           { T: "10:30", isFree: true },
@@ -4224,7 +4255,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "شنبه ۱۳ مرداد ۱۴۰۰",
+        day: [{ D: "شنبه ۱۳ مرداد ۱۴۰۰", dayId: 4 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: true },
@@ -4237,7 +4268,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "یکشنبه ۱۴ مرداد ۱۴۰۰",
+        day: [{ D: "یکشنبه ۱۴ مرداد ۱۴۰۰", dayId: 5 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: false },
@@ -4250,7 +4281,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "دوشنبه ۱۵ مرداد ۱۴۰۰",
+        day: [{ D: "دوشنبه ۱۵ مرداد ۱۴۰۰", dayId: 6 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: true },
@@ -4263,7 +4294,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "سه شنبه ۱۶ مرداد ۱۴۰۰",
+        day: [{ D: "سه شنبه ۱۶ مرداد ۱۴۰۰", dayId: 7 }],
         clock: [
           { T: "10:00", isFree: false },
           { T: "10:30", isFree: false },
@@ -4323,7 +4354,7 @@ export const doctorsDetails = [
     ],
     times: [
       {
-        day: "سه شنبه ۹ مرداد ۱۴۰۰",
+        day: [{ D: "سه شنبه ۹ مرداد ۱۴۰۰", dayId: 1 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: true },
@@ -4336,7 +4367,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "چهارشنبه ۱۰ مرداد ۱۴۰۰",
+        day: [{ D: "چهارشنبه ۱۰ مرداد ۱۴۰۰", dayId: 2 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: true },
@@ -4349,7 +4380,8 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "پنجشنبه ۱۱ مرداد ۱۴۰۰",
+        day: [{ D: "پنجشنبه ۱۱ مرداد ۱۴۰۰", dayId: 3 }],
+
         clock: [
           { T: "10:00", isFree: false },
           { T: "10:30", isFree: true },
@@ -4362,7 +4394,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "شنبه ۱۳ مرداد ۱۴۰۰",
+        day: [{ D: "شنبه ۱۳ مرداد ۱۴۰۰", dayId: 4 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: true },
@@ -4375,7 +4407,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "یکشنبه ۱۴ مرداد ۱۴۰۰",
+        day: [{ D: "یکشنبه ۱۴ مرداد ۱۴۰۰", dayId: 5 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: false },
@@ -4388,7 +4420,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "دوشنبه ۱۵ مرداد ۱۴۰۰",
+        day: [{ D: "دوشنبه ۱۵ مرداد ۱۴۰۰", dayId: 6 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: true },
@@ -4401,7 +4433,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "سه شنبه ۱۶ مرداد ۱۴۰۰",
+        day: [{ D: "سه شنبه ۱۶ مرداد ۱۴۰۰", dayId: 7 }],
         clock: [
           { T: "10:00", isFree: false },
           { T: "10:30", isFree: false },
@@ -4461,7 +4493,7 @@ export const doctorsDetails = [
     ],
     times: [
       {
-        day: "سه شنبه ۹ مرداد ۱۴۰۰",
+        day: [{ D: "سه شنبه ۹ مرداد ۱۴۰۰", dayId: 1 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: true },
@@ -4474,7 +4506,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "چهارشنبه ۱۰ مرداد ۱۴۰۰",
+        day: [{ D: "چهارشنبه ۱۰ مرداد ۱۴۰۰", dayId: 2 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: true },
@@ -4487,7 +4519,8 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "پنجشنبه ۱۱ مرداد ۱۴۰۰",
+        day: [{ D: "پنجشنبه ۱۱ مرداد ۱۴۰۰", dayId: 3 }],
+
         clock: [
           { T: "10:00", isFree: false },
           { T: "10:30", isFree: true },
@@ -4500,7 +4533,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "شنبه ۱۳ مرداد ۱۴۰۰",
+        day: [{ D: "شنبه ۱۳ مرداد ۱۴۰۰", dayId: 4 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: true },
@@ -4513,7 +4546,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "یکشنبه ۱۴ مرداد ۱۴۰۰",
+        day: [{ D: "یکشنبه ۱۴ مرداد ۱۴۰۰", dayId: 5 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: false },
@@ -4526,7 +4559,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "دوشنبه ۱۵ مرداد ۱۴۰۰",
+        day: [{ D: "دوشنبه ۱۵ مرداد ۱۴۰۰", dayId: 6 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: true },
@@ -4539,7 +4572,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "سه شنبه ۱۶ مرداد ۱۴۰۰",
+        day: [{ D: "سه شنبه ۱۶ مرداد ۱۴۰۰", dayId: 7 }],
         clock: [
           { T: "10:00", isFree: false },
           { T: "10:30", isFree: false },
@@ -4599,7 +4632,7 @@ export const doctorsDetails = [
     ],
     times: [
       {
-        day: "سه شنبه ۹ مرداد ۱۴۰۰",
+        day: [{ D: "سه شنبه ۹ مرداد ۱۴۰۰", dayId: 1 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: true },
@@ -4612,7 +4645,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "چهارشنبه ۱۰ مرداد ۱۴۰۰",
+        day: [{ D: "چهارشنبه ۱۰ مرداد ۱۴۰۰", dayId: 2 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: true },
@@ -4625,7 +4658,8 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "پنجشنبه ۱۱ مرداد ۱۴۰۰",
+        day: [{ D: "پنجشنبه ۱۱ مرداد ۱۴۰۰", dayId: 3 }],
+
         clock: [
           { T: "10:00", isFree: false },
           { T: "10:30", isFree: true },
@@ -4638,7 +4672,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "شنبه ۱۳ مرداد ۱۴۰۰",
+        day: [{ D: "شنبه ۱۳ مرداد ۱۴۰۰", dayId: 4 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: true },
@@ -4651,7 +4685,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "یکشنبه ۱۴ مرداد ۱۴۰۰",
+        day: [{ D: "یکشنبه ۱۴ مرداد ۱۴۰۰", dayId: 5 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: false },
@@ -4664,7 +4698,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "دوشنبه ۱۵ مرداد ۱۴۰۰",
+        day: [{ D: "دوشنبه ۱۵ مرداد ۱۴۰۰", dayId: 6 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: true },
@@ -4677,7 +4711,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "سه شنبه ۱۶ مرداد ۱۴۰۰",
+        day: [{ D: "سه شنبه ۱۶ مرداد ۱۴۰۰", dayId: 7 }],
         clock: [
           { T: "10:00", isFree: false },
           { T: "10:30", isFree: false },
@@ -4737,7 +4771,7 @@ export const doctorsDetails = [
     ],
     times: [
       {
-        day: "سه شنبه ۹ مرداد ۱۴۰۰",
+        day: [{ D: "سه شنبه ۹ مرداد ۱۴۰۰", dayId: 1 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: true },
@@ -4750,7 +4784,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "چهارشنبه ۱۰ مرداد ۱۴۰۰",
+        day: [{ D: "چهارشنبه ۱۰ مرداد ۱۴۰۰", dayId: 2 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: true },
@@ -4763,7 +4797,8 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "پنجشنبه ۱۱ مرداد ۱۴۰۰",
+        day: [{ D: "پنجشنبه ۱۱ مرداد ۱۴۰۰", dayId: 3 }],
+
         clock: [
           { T: "10:00", isFree: false },
           { T: "10:30", isFree: true },
@@ -4776,7 +4811,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "شنبه ۱۳ مرداد ۱۴۰۰",
+        day: [{ D: "شنبه ۱۳ مرداد ۱۴۰۰", dayId: 4 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: true },
@@ -4789,7 +4824,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "یکشنبه ۱۴ مرداد ۱۴۰۰",
+        day: [{ D: "یکشنبه ۱۴ مرداد ۱۴۰۰", dayId: 5 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: false },
@@ -4802,7 +4837,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "دوشنبه ۱۵ مرداد ۱۴۰۰",
+        day: [{ D: "دوشنبه ۱۵ مرداد ۱۴۰۰", dayId: 6 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: true },
@@ -4815,7 +4850,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "سه شنبه ۱۶ مرداد ۱۴۰۰",
+        day: [{ D: "سه شنبه ۱۶ مرداد ۱۴۰۰", dayId: 7 }],
         clock: [
           { T: "10:00", isFree: false },
           { T: "10:30", isFree: false },
@@ -4875,7 +4910,7 @@ export const doctorsDetails = [
     ],
     times: [
       {
-        day: "سه شنبه ۹ مرداد ۱۴۰۰",
+        day: [{ D: "سه شنبه ۹ مرداد ۱۴۰۰", dayId: 1 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: true },
@@ -4888,7 +4923,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "چهارشنبه ۱۰ مرداد ۱۴۰۰",
+        day: [{ D: "چهارشنبه ۱۰ مرداد ۱۴۰۰", dayId: 2 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: true },
@@ -4901,7 +4936,8 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "پنجشنبه ۱۱ مرداد ۱۴۰۰",
+        day: [{ D: "پنجشنبه ۱۱ مرداد ۱۴۰۰", dayId: 3 }],
+
         clock: [
           { T: "10:00", isFree: false },
           { T: "10:30", isFree: true },
@@ -4914,7 +4950,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "شنبه ۱۳ مرداد ۱۴۰۰",
+        day: [{ D: "شنبه ۱۳ مرداد ۱۴۰۰", dayId: 4 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: true },
@@ -4927,7 +4963,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "یکشنبه ۱۴ مرداد ۱۴۰۰",
+        day: [{ D: "یکشنبه ۱۴ مرداد ۱۴۰۰", dayId: 5 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: false },
@@ -4940,7 +4976,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "دوشنبه ۱۵ مرداد ۱۴۰۰",
+        day: [{ D: "دوشنبه ۱۵ مرداد ۱۴۰۰", dayId: 6 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: true },
@@ -4953,7 +4989,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "سه شنبه ۱۶ مرداد ۱۴۰۰",
+        day: [{ D: "سه شنبه ۱۶ مرداد ۱۴۰۰", dayId: 7 }],
         clock: [
           { T: "10:00", isFree: false },
           { T: "10:30", isFree: false },
@@ -5013,7 +5049,7 @@ export const doctorsDetails = [
     ],
     times: [
       {
-        day: "سه شنبه ۹ مرداد ۱۴۰۰",
+        day: [{ D: "سه شنبه ۹ مرداد ۱۴۰۰", dayId: 1 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: true },
@@ -5026,7 +5062,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "چهارشنبه ۱۰ مرداد ۱۴۰۰",
+        day: [{ D: "چهارشنبه ۱۰ مرداد ۱۴۰۰", dayId: 2 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: true },
@@ -5039,7 +5075,8 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "پنجشنبه ۱۱ مرداد ۱۴۰۰",
+        day: [{ D: "پنجشنبه ۱۱ مرداد ۱۴۰۰", dayId: 3 }],
+
         clock: [
           { T: "10:00", isFree: false },
           { T: "10:30", isFree: true },
@@ -5052,7 +5089,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "شنبه ۱۳ مرداد ۱۴۰۰",
+        day: [{ D: "شنبه ۱۳ مرداد ۱۴۰۰", dayId: 4 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: true },
@@ -5065,7 +5102,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "یکشنبه ۱۴ مرداد ۱۴۰۰",
+        day: [{ D: "یکشنبه ۱۴ مرداد ۱۴۰۰", dayId: 5 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: false },
@@ -5078,7 +5115,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "دوشنبه ۱۵ مرداد ۱۴۰۰",
+        day: [{ D: "دوشنبه ۱۵ مرداد ۱۴۰۰", dayId: 6 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: true },
@@ -5091,7 +5128,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "سه شنبه ۱۶ مرداد ۱۴۰۰",
+        day: [{ D: "سه شنبه ۱۶ مرداد ۱۴۰۰", dayId: 7 }],
         clock: [
           { T: "10:00", isFree: false },
           { T: "10:30", isFree: false },
@@ -5151,7 +5188,7 @@ export const doctorsDetails = [
     ],
     times: [
       {
-        day: "سه شنبه ۹ مرداد ۱۴۰۰",
+        day: [{ D: "سه شنبه ۹ مرداد ۱۴۰۰", dayId: 1 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: true },
@@ -5164,7 +5201,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "چهارشنبه ۱۰ مرداد ۱۴۰۰",
+        day: [{ D: "چهارشنبه ۱۰ مرداد ۱۴۰۰", dayId: 2 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: true },
@@ -5177,7 +5214,8 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "پنجشنبه ۱۱ مرداد ۱۴۰۰",
+        day: [{ D: "پنجشنبه ۱۱ مرداد ۱۴۰۰", dayId: 3 }],
+
         clock: [
           { T: "10:00", isFree: false },
           { T: "10:30", isFree: true },
@@ -5190,7 +5228,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "شنبه ۱۳ مرداد ۱۴۰۰",
+        day: [{ D: "شنبه ۱۳ مرداد ۱۴۰۰", dayId: 4 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: true },
@@ -5203,7 +5241,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "یکشنبه ۱۴ مرداد ۱۴۰۰",
+        day: [{ D: "یکشنبه ۱۴ مرداد ۱۴۰۰", dayId: 5 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: false },
@@ -5216,7 +5254,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "دوشنبه ۱۵ مرداد ۱۴۰۰",
+        day: [{ D: "دوشنبه ۱۵ مرداد ۱۴۰۰", dayId: 6 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: true },
@@ -5229,7 +5267,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "سه شنبه ۱۶ مرداد ۱۴۰۰",
+        day: [{ D: "سه شنبه ۱۶ مرداد ۱۴۰۰", dayId: 7 }],
         clock: [
           { T: "10:00", isFree: false },
           { T: "10:30", isFree: false },
@@ -5289,7 +5327,7 @@ export const doctorsDetails = [
     ],
     times: [
       {
-        day: "سه شنبه ۹ مرداد ۱۴۰۰",
+        day: [{ D: "سه شنبه ۹ مرداد ۱۴۰۰", dayId: 1 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: true },
@@ -5302,7 +5340,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "چهارشنبه ۱۰ مرداد ۱۴۰۰",
+        day: [{ D: "چهارشنبه ۱۰ مرداد ۱۴۰۰", dayId: 2 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: true },
@@ -5315,7 +5353,8 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "پنجشنبه ۱۱ مرداد ۱۴۰۰",
+        day: [{ D: "پنجشنبه ۱۱ مرداد ۱۴۰۰", dayId: 3 }],
+
         clock: [
           { T: "10:00", isFree: false },
           { T: "10:30", isFree: true },
@@ -5328,7 +5367,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "شنبه ۱۳ مرداد ۱۴۰۰",
+        day: [{ D: "شنبه ۱۳ مرداد ۱۴۰۰", dayId: 4 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: true },
@@ -5341,7 +5380,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "یکشنبه ۱۴ مرداد ۱۴۰۰",
+        day: [{ D: "یکشنبه ۱۴ مرداد ۱۴۰۰", dayId: 5 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: false },
@@ -5354,7 +5393,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "دوشنبه ۱۵ مرداد ۱۴۰۰",
+        day: [{ D: "دوشنبه ۱۵ مرداد ۱۴۰۰", dayId: 6 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: true },
@@ -5367,7 +5406,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "سه شنبه ۱۶ مرداد ۱۴۰۰",
+        day: [{ D: "سه شنبه ۱۶ مرداد ۱۴۰۰", dayId: 7 }],
         clock: [
           { T: "10:00", isFree: false },
           { T: "10:30", isFree: false },
@@ -5427,7 +5466,7 @@ export const doctorsDetails = [
     ],
     times: [
       {
-        day: "سه شنبه ۹ مرداد ۱۴۰۰",
+        day: [{ D: "سه شنبه ۹ مرداد ۱۴۰۰", dayId: 1 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: true },
@@ -5440,7 +5479,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "چهارشنبه ۱۰ مرداد ۱۴۰۰",
+        day: [{ D: "چهارشنبه ۱۰ مرداد ۱۴۰۰", dayId: 2 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: true },
@@ -5453,7 +5492,8 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "پنجشنبه ۱۱ مرداد ۱۴۰۰",
+        day: [{ D: "پنجشنبه ۱۱ مرداد ۱۴۰۰", dayId: 3 }],
+
         clock: [
           { T: "10:00", isFree: false },
           { T: "10:30", isFree: true },
@@ -5466,7 +5506,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "شنبه ۱۳ مرداد ۱۴۰۰",
+        day: [{ D: "شنبه ۱۳ مرداد ۱۴۰۰", dayId: 4 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: true },
@@ -5479,7 +5519,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "یکشنبه ۱۴ مرداد ۱۴۰۰",
+        day: [{ D: "یکشنبه ۱۴ مرداد ۱۴۰۰", dayId: 5 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: false },
@@ -5492,7 +5532,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "دوشنبه ۱۵ مرداد ۱۴۰۰",
+        day: [{ D: "دوشنبه ۱۵ مرداد ۱۴۰۰", dayId: 6 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: true },
@@ -5505,7 +5545,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "سه شنبه ۱۶ مرداد ۱۴۰۰",
+        day: [{ D: "سه شنبه ۱۶ مرداد ۱۴۰۰", dayId: 7 }],
         clock: [
           { T: "10:00", isFree: false },
           { T: "10:30", isFree: false },
@@ -5565,7 +5605,7 @@ export const doctorsDetails = [
     ],
     times: [
       {
-        day: "سه شنبه ۹ مرداد ۱۴۰۰",
+        day: [{ D: "سه شنبه ۹ مرداد ۱۴۰۰", dayId: 1 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: true },
@@ -5578,7 +5618,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "چهارشنبه ۱۰ مرداد ۱۴۰۰",
+        day: [{ D: "چهارشنبه ۱۰ مرداد ۱۴۰۰", dayId: 2 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: true },
@@ -5591,7 +5631,8 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "پنجشنبه ۱۱ مرداد ۱۴۰۰",
+        day: [{ D: "پنجشنبه ۱۱ مرداد ۱۴۰۰", dayId: 3 }],
+
         clock: [
           { T: "10:00", isFree: false },
           { T: "10:30", isFree: true },
@@ -5604,7 +5645,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "شنبه ۱۳ مرداد ۱۴۰۰",
+        day: [{ D: "شنبه ۱۳ مرداد ۱۴۰۰", dayId: 4 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: true },
@@ -5617,7 +5658,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "یکشنبه ۱۴ مرداد ۱۴۰۰",
+        day: [{ D: "یکشنبه ۱۴ مرداد ۱۴۰۰", dayId: 5 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: false },
@@ -5630,7 +5671,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "دوشنبه ۱۵ مرداد ۱۴۰۰",
+        day: [{ D: "دوشنبه ۱۵ مرداد ۱۴۰۰", dayId: 6 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: true },
@@ -5643,7 +5684,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "سه شنبه ۱۶ مرداد ۱۴۰۰",
+        day: [{ D: "سه شنبه ۱۶ مرداد ۱۴۰۰", dayId: 7 }],
         clock: [
           { T: "10:00", isFree: false },
           { T: "10:30", isFree: false },
@@ -5703,7 +5744,7 @@ export const doctorsDetails = [
     ],
     times: [
       {
-        day: "سه شنبه ۹ مرداد ۱۴۰۰",
+        day: [{ D: "سه شنبه ۹ مرداد ۱۴۰۰", dayId: 1 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: true },
@@ -5716,7 +5757,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "چهارشنبه ۱۰ مرداد ۱۴۰۰",
+        day: [{ D: "چهارشنبه ۱۰ مرداد ۱۴۰۰", dayId: 2 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: true },
@@ -5729,7 +5770,8 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "پنجشنبه ۱۱ مرداد ۱۴۰۰",
+        day: [{ D: "پنجشنبه ۱۱ مرداد ۱۴۰۰", dayId: 3 }],
+
         clock: [
           { T: "10:00", isFree: false },
           { T: "10:30", isFree: true },
@@ -5742,7 +5784,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "شنبه ۱۳ مرداد ۱۴۰۰",
+        day: [{ D: "شنبه ۱۳ مرداد ۱۴۰۰", dayId: 4 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: true },
@@ -5755,7 +5797,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "یکشنبه ۱۴ مرداد ۱۴۰۰",
+        day: [{ D: "یکشنبه ۱۴ مرداد ۱۴۰۰", dayId: 5 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: false },
@@ -5768,7 +5810,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "دوشنبه ۱۵ مرداد ۱۴۰۰",
+        day: [{ D: "دوشنبه ۱۵ مرداد ۱۴۰۰", dayId: 6 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: true },
@@ -5781,7 +5823,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "سه شنبه ۱۶ مرداد ۱۴۰۰",
+        day: [{ D: "سه شنبه ۱۶ مرداد ۱۴۰۰", dayId: 7 }],
         clock: [
           { T: "10:00", isFree: false },
           { T: "10:30", isFree: false },
@@ -5841,7 +5883,7 @@ export const doctorsDetails = [
     ],
     times: [
       {
-        day: "سه شنبه ۹ مرداد ۱۴۰۰",
+        day: [{ D: "سه شنبه ۹ مرداد ۱۴۰۰", dayId: 1 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: true },
@@ -5854,7 +5896,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "چهارشنبه ۱۰ مرداد ۱۴۰۰",
+        day: [{ D: "چهارشنبه ۱۰ مرداد ۱۴۰۰", dayId: 2 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: true },
@@ -5867,7 +5909,8 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "پنجشنبه ۱۱ مرداد ۱۴۰۰",
+        day: [{ D: "پنجشنبه ۱۱ مرداد ۱۴۰۰", dayId: 3 }],
+
         clock: [
           { T: "10:00", isFree: false },
           { T: "10:30", isFree: true },
@@ -5880,7 +5923,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "شنبه ۱۳ مرداد ۱۴۰۰",
+        day: [{ D: "شنبه ۱۳ مرداد ۱۴۰۰", dayId: 4 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: true },
@@ -5893,7 +5936,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "یکشنبه ۱۴ مرداد ۱۴۰۰",
+        day: [{ D: "یکشنبه ۱۴ مرداد ۱۴۰۰", dayId: 5 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: false },
@@ -5906,7 +5949,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "دوشنبه ۱۵ مرداد ۱۴۰۰",
+        day: [{ D: "دوشنبه ۱۵ مرداد ۱۴۰۰", dayId: 6 }],
         clock: [
           { T: "10:00", isFree: true },
           { T: "10:30", isFree: true },
@@ -5919,7 +5962,7 @@ export const doctorsDetails = [
         ],
       },
       {
-        day: "سه شنبه ۱۶ مرداد ۱۴۰۰",
+        day: [{ D: "سه شنبه ۱۶ مرداد ۱۴۰۰", dayId: 7 }],
         clock: [
           { T: "10:00", isFree: false },
           { T: "10:30", isFree: false },

@@ -11,12 +11,11 @@ import CancelOutlinedIcon from "@mui/icons-material/CancelOutlined";
 import VerifiedIcon from "@mui/icons-material/Verified";
 
 const Appointment = () => {
+  // ************ GET SELECTED DOCTOR **************
+
   const location = useLocation();
   const Id = location.pathname.split("/")[2];
   const id = parseInt(Id, 10);
-
-  const [times, setTimes] = useState([]);
-  const [checked, setChecked] = useState(false);
 
   let selectedDoctor = {};
 
@@ -24,17 +23,64 @@ const Appointment = () => {
     if (item.id === id) selectedDoctor = item;
   });
 
-  const handleClick = (e) => {
+  // ************ STATE VARIABLES **************
+
+  const [times, setTimes] = useState([]);
+  const [dayValue, setDayValue] = useState("");
+  const [clockValue, setClockValue] = useState("");
+  const [showForm, setShowForm] = useState(false);
+
+  // ************ GET TODAY'S DATE **************
+
+  // var dateFormat = new Intl.DateTimeFormat("fa");
+  // console.log(dateFormat.format(Date.now()));
+
+  const isoString = new Date().toISOString();
+  const date = new Date(isoString);
+
+  const year = new Intl.DateTimeFormat("fa", {
+    year: "numeric",
+  }).format(date);
+
+  const weekday = new Intl.DateTimeFormat("fa", {
+    weekday: "long",
+  }).format(date);
+
+  const month = new Intl.DateTimeFormat("fa", {
+    month: "long",
+  }).format(date);
+
+  const day = new Intl.DateTimeFormat("fa", {
+    day: "numeric",
+  }).format(date);
+
+  const todayDate = weekday + " " + day + " " + month + " " + year;
+
+  // ************ GET HANDLE RADIO BUTTONS CLICKS **************
+
+  const handleDayChoice = (e) => {
     selectedDoctor.times.map((item) => {
-      if (item.day === e.target.innerText) {
-        setChecked(!checked);
-        setTimes(item.clock);
+      if (dayValue === e.target.value) {
+        setDayValue("");
+        setTimes([]);
       } else {
+        setDayValue(e.target.value);
+        setClockValue("...");
+        if (item.day[0].D === e.target.value) {
+          setTimes(item.clock);
+        }
       }
     });
   };
 
-  // console.log(times);
+  const handleChange = (e) => {
+    return;
+  };
+
+  const handleClockChoice = (e) => {
+    setClockValue(e.target.value);
+    setShowForm(true);
+  };
 
   return (
     <>
@@ -57,37 +103,92 @@ const Appointment = () => {
         </div>
         <div className="todaysDate">
           <TodayRoundedIcon style={{ fontSize: 40, color: "#00748e" }} />
-          <div className="todaysText">امروز &lArr; دوشنبه ۸ مرداد ۱۴۰۰</div>
+          <div className="todaysText">امروز &lArr; {todayDate}</div>
         </div>
         <div className="timeTable">
           <div className="daysCol">
             {selectedDoctor.times.map((item) => (
-              <div key={item.day} className="dayCheckboxWrapper">
-                {!checked ? (
-                  <RadioButtonUncheckedIcon style={{ color: "#00748e" }} />
-                ) : (
-                  <CheckCircleOutlineIcon style={{ color: "#00748e" }} />
-                )}
-                <div className="day" onClick={handleClick}>
-                  {item.day}
-                </div>
+              <div className="dayCheckboxWrapper" key={item.day[0].dayId}>
+                <input
+                  type="radio"
+                  name="date"
+                  id={item.day[0].dayId}
+                  value={item.day[0].D}
+                  checked={dayValue === item.day[0].D}
+                  onChange={handleChange}
+                  onClick={handleDayChoice}
+                />
+                <label className="day" htmlFor={item.day[0].dayId}>
+                  {item.day[0].D}
+                </label>
               </div>
             ))}
           </div>
           <div className="clocksCol">
             {times?.map((item) => (
               <div key={item.T} className="clockCheckboxWrapper">
-                {item.isFree ? (
-                  <RadioButtonUncheckedIcon style={{ color: "#00748e" }} />
-                ) : (
-                  <CancelOutlinedIcon style={{ color: "#c2006b" }} />
-                )}
-                <div className={item.isFree ? "freeClock" : "notFreeClock"}>
+                <input
+                  type="radio"
+                  name="clock"
+                  id={item.T}
+                  checked={clockValue === item.T}
+                  value={item.T}
+                  onChange={handleChange}
+                  onClick={handleClockChoice}
+                />
+                <label
+                  className={item.isFree ? "freeClock" : "notFreeClock"}
+                  htmlFor={item.T}
+                >
                   {item.T}
-                </div>
+                </label>
               </div>
             ))}
           </div>
+        </div>
+        <div className={showForm ? "customerFormSection" : "hidden"}>
+          <p className="customerSelectedTime">
+            زمان مورد انتخاب شما: روز {dayValue} ساعت {clockValue}
+          </p>
+          <form action="" className="form">
+            <div className="formRow">
+              <label className="label" htmlFor="firstName">
+                نام
+              </label>
+              <input
+                className="inputField"
+                type="text"
+                id="firstName"
+                name="Name"
+              />
+            </div>
+
+            <div className="formRow">
+              <label className="label" htmlFor="surName">
+                نام خانوادگی
+              </label>
+              <input
+                className="inputField"
+                type="text"
+                id="surName"
+                name="surName"
+              />
+            </div>
+
+            <div className="formRow">
+              <label className="label" htmlFor="phone">
+                شماره تلفن همراه
+              </label>
+              <input
+                className="inputField"
+                type="phone"
+                id="phone"
+                name="phone"
+              />
+            </div>
+
+            <input className="inputButton" type="submit" value="ثبت نوبت" />
+          </form>
         </div>
       </div>
       <Footer />

@@ -121,7 +121,7 @@
 
 .getAppointmetnButton {
   flex: 3;
-  background-color: rgb(14, 207, 56);
+  background-color: #0ecf38;
   border-radius: 0 0 0 10px;
   display: flex;
   justify-content: space-around;
