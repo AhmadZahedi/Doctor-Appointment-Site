@@ -14,19 +14,39 @@ const Wrapper = styled.div`
 
 const Error = styled.span``;
 
-const Cards = ({ city, cat }) => {
+const Cards = ({ city, cat, searchInput }) => {
   let selectedItems = [];
   doctorsDetails.map((item) => {
-    if (city && !cat) {
+    if (city && !cat && !searchInput) {
       if (item.city === city) {
         selectedItems.push(item);
       }
-    } else if (!city && cat) {
+    } else if (city && !cat && searchInput) {
+      if (item.city === city && item.name.includes(searchInput)) {
+        selectedItems.push(item);
+      }
+    } else if (!city && cat && !searchInput) {
       if (item.specialty === cat) {
         selectedItems.push(item);
       }
-    } else if (city && cat) {
+    } else if (!city && cat && searchInput) {
+      if (item.specialty === cat && item.name.includes(searchInput)) {
+        selectedItems.push(item);
+      }
+    } else if (city && cat && !searchInput) {
       if (item.city === city && item.specialty === cat) {
+        selectedItems.push(item);
+      }
+    } else if (city && cat && searchInput) {
+      if (
+        item.city === city &&
+        item.specialty === cat &&
+        item.name.includes(searchInput)
+      ) {
+        selectedItems.push(item);
+      }
+    } else if (!city && !cat && searchInput) {
+      if (item.name.includes(searchInput)) {
         selectedItems.push(item);
       }
     } else {

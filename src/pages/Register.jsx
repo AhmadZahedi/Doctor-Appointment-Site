@@ -1,11 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import "./css/Register.css";
 
 const Register = () => {
+  const [fName, setFName] = useState("");
+  const [lName, setLName] = useState("");
+  const [nCode, setNCode] = useState("");
+  const [pass, setPass] = useState("");
+  const [rPass, setRPass] = useState("");
+  const [email, setEmail] = useState("");
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (pass !== rPass) alert("WRONG PASSWORD!");
+  };
   return (
     <div className="registerBody">
       <div className="registerContainer">
-        <form className="registerForm">
+        <form className="registerForm" onSubmit={handleSubmit}>
           <div className="fieldset">
             <label className="label" htmlFor="firstName">
               نام
@@ -16,6 +28,7 @@ const Register = () => {
               id="firstName"
               name="Name"
               required
+              onChange={(e) => setFName(e.target.value)}
             />
           </div>
           <div className="fieldset">
@@ -28,6 +41,7 @@ const Register = () => {
               id="lastName"
               name="lastName"
               required
+              onChange={(e) => setLName(e.target.value)}
             />
           </div>
           <div className="fieldset">
@@ -35,11 +49,13 @@ const Register = () => {
               کد ملی
             </label>
             <input
-              className="input"
-              type="number"
+              className="input numInput"
+              type="text"
+              inputMode="numeric"
               id="nationalCode"
               name="nationalCode"
               required
+              onChange={(e) => setNCode(e.target.value)}
             />
           </div>
           <div className="fieldset">
@@ -52,6 +68,7 @@ const Register = () => {
               id="password"
               name="password"
               required
+              onChange={(e) => setPass(e.target.value)}
             />
           </div>
           <div className="fieldset">
@@ -64,6 +81,7 @@ const Register = () => {
               id="rePassword"
               name="rePassword"
               required
+              onChange={(e) => setRPass(e.target.value)}
             />
           </div>
           <div className="fieldset">
@@ -76,14 +94,15 @@ const Register = () => {
               id="email"
               name="email"
               placeholder="اختیاری"
+              onChange={(e) => setEmail(e.target.value)}
             />
           </div>
           <button className="registerButton" type="submit">
             ورود
           </button>
-          <a className="registerAnchorTag" href="/login">
+          <Link className="registerLink" to="/login">
             قبلا ثبت نام کرده‌اید؟
-          </a>
+          </Link>
         </form>
       </div>
       <img

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
 import logo from "../imgs/LunaFinalWhite.png";
@@ -44,6 +44,8 @@ const Logo = styled.img`
   height: 100%;
   object-fit: contain;
   padding: 20px 0;
+
+  cursor: pointer;
 `;
 
 const UserPanel = styled.div`
@@ -95,10 +97,16 @@ const Input = styled.input`
   }
 `;
 
-const Navbar = () => {
+const Navbar = ({ setSearchInput }) => {
+  const handleSearch = (e) => {};
+
   const navigate = useNavigate();
   const handleLogin = () => {
     navigate("/login");
+  };
+
+  const goToHome = () => {
+    navigate("/");
   };
 
   return (
@@ -112,13 +120,24 @@ const Navbar = () => {
       </Upsection>
       <Downsection>
         <Wrapper>
-          <Logo src={logo} />
+          <Logo src={logo} onClick={goToHome} />
           <UserPanel onClick={handleLogin}>ورود کاربران</UserPanel>
           <DocInter>ورود پزشکان</DocInter>
           <QA>پرسش و پاسخ پزشکی</QA>
           <SearchContainer>
-            <SearchIcon style={{ color: "gray", fontSize: 16 }} />
-            <Input placeholder="جستجو..." />
+            <SearchIcon
+              style={{
+                color: "gray",
+                fontSize: 22,
+                margin: 10,
+                cursor: "pointer",
+              }}
+              onClick={handleSearch}
+            />
+            <Input
+              placeholder="جستجو..."
+              onChange={(e) => setSearchInput(e.target.value)}
+            />
           </SearchContainer>
         </Wrapper>
       </Downsection>

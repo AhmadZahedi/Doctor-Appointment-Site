@@ -30,6 +30,10 @@ const Appointment = () => {
   const [clockValue, setClockValue] = useState("");
   const [showForm, setShowForm] = useState(false);
 
+  const [fName, setFName] = useState("");
+  const [lName, setLName] = useState("");
+  const [phone, setPhone] = useState("");
+
   // ************ GET TODAY'S DATE **************
 
   // var dateFormat = new Intl.DateTimeFormat("fa");
@@ -56,7 +60,7 @@ const Appointment = () => {
 
   const todayDate = weekday + " " + day + " " + month + " " + year;
 
-  // ************ GET HANDLE RADIO BUTTONS CLICKS **************
+  // ************ HANDLE RADIO BUTTONS CLICKS **************
 
   const handleDayChoice = (e) => {
     selectedDoctor.times.map((item) => {
@@ -81,6 +85,12 @@ const Appointment = () => {
   const handleClockChoice = (e) => {
     setClockValue(e.target.value);
     setShowForm(true);
+  };
+
+  // ************ HANDLE FORM SUBMITION **************
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log(fName, lName, phone);
   };
 
   return (
@@ -151,7 +161,7 @@ const Appointment = () => {
           <p className="customerSelectedTime">
             زمان مورد انتخاب شما: روز {dayValue} ساعت {clockValue}
           </p>
-          <form action="" className="form">
+          <form action="" className="form" onSubmit={handleSubmit}>
             <div className="formRow">
               <label className="label" htmlFor="firstName">
                 نام
@@ -161,6 +171,7 @@ const Appointment = () => {
                 type="text"
                 id="firstName"
                 name="Name"
+                onChange={(e) => setFName(e.target.value)}
               />
             </div>
 
@@ -173,6 +184,7 @@ const Appointment = () => {
                 type="text"
                 id="surName"
                 name="surName"
+                onChange={(e) => setLName(e.target.value)}
               />
             </div>
 
@@ -185,10 +197,13 @@ const Appointment = () => {
                 type="phone"
                 id="phone"
                 name="phone"
+                onChange={(e) => setPhone(e.target.value)}
               />
             </div>
 
-            <input className="inputButton" type="submit" value="ثبت نوبت" />
+            <button className="inputButton" type="submit">
+              ثبت نوبت
+            </button>
           </form>
         </div>
       </div>

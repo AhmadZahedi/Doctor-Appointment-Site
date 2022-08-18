@@ -79,12 +79,13 @@ input:required {
 
 input:invalid {
   border-color: red;
-}
-
+} */
+/* 
 input:required:valid {
   border-color: green;
-}
+} */
 
+/*
 input:invalid {
   border-color: red;
 } */
@@ -101,6 +102,10 @@ input:invalid {
   margin-top: 20px;
 }
 
-.registerAnchorTag {
+.registerLink {
   text-decoration: none;
+}
+
+.registerLink:active {
+  color: #0000be;
 }

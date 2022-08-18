@@ -1,11 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import "./css/Login.css";
 
 const Login = () => {
+  const [flName, setFlName] = useState("");
+  const [password, setPassword] = useState("");
+  const [email, setEmail] = useState("");
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+  };
+
   return (
     <div className="loginBody">
       <div className="loginContainer">
-        <form className="loginForm">
+        <form className="loginForm" onSubmit={handleSubmit}>
           <div className="fieldset">
             <label className="label" htmlFor="firstLastName">
               نام و نام خانوادگی
@@ -16,6 +25,7 @@ const Login = () => {
               id="firstLastName"
               name="firstLastName"
               required
+              onChange={(e) => setFlName(e.target.value)}
             />
           </div>
           <div className="fieldset">
@@ -28,6 +38,7 @@ const Login = () => {
               id="password"
               name="password"
               required
+              onChange={(e) => setPassword(e.target.value)}
             />
           </div>
           <div className="fieldset">
@@ -40,14 +51,15 @@ const Login = () => {
               id="email"
               name="email"
               placeholder="اختیاری"
+              onChange={(e) => setEmail(e.target.value)}
             />
           </div>
           <button className="loginButton" type="submit">
             ورود
           </button>
-          <a className="loginAnchorTag" href="/register">
-            تا کنون ثبت نام نکرده‌اید؟
-          </a>
+          <Link className="loginLink" to="/register">
+            تاکنون ثبت نام نکرده‌اید؟
+          </Link>
         </form>
       </div>
       <img className="loginLogo" alt="logo" src="../imgs/LunaFinalWhite.png" />

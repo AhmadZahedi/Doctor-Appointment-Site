@@ -15,13 +15,14 @@ const Container = styled.div`
 const Home = () => {
   const [city, setCity] = useState(null);
   const [cat, setCat] = useState(null);
+  const [searchInput, setSearchInput] = useState(null);
 
   return (
     <div>
-      <Navbar />
+      <Navbar setSearchInput={setSearchInput} />
       <Container>
         <Sidebar setCity={setCity} setCat={setCat} />
-        <Cards city={city} cat={cat} />
+        <Cards city={city} cat={cat} searchInput={searchInput} />
       </Container>
       <Footer />
     </div>

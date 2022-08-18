@@ -101,6 +101,10 @@ input:invalid {
   margin-top: 20px;
 }
 
-.loginAnchorTag {
+.loginLink {
   text-decoration: none;
+}
+
+.loginLink:active {
+  color: #0000be;
 }

@@ -48,9 +48,7 @@ const CategorieItemText = styled.div`
 
 const Sidebar = ({ setCity, setCat }) => {
   const handleFilters = (e) => {
-    const value = e.target.value;
-    const filterName = e.target.name;
-    setCity(value);
+    setCity(e.target.value);
   };
 
   const handleClick = (e) => {
