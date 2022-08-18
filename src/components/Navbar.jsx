@@ -9,7 +9,7 @@ const Container = styled.div``;
 const Upsection = styled.div`
   background-color: #00748e;
   color: #fff;
-  padding: 15px 0;
+  padding: 1.5rem 0;
 `;
 
 const Wrapper = styled.div`
@@ -17,21 +17,21 @@ const Wrapper = styled.div`
   padding-left: 5vw;
   display: flex;
   align-items: center;
-  gap: 30px;
+  gap: 3rem;
 `;
 
 const ProfileName = styled.p`
-  font-size: 12px;
+  font-size: 1.2rem;
   cursor: pointer;
 `;
 
 const MyList = styled.p`
-  font-size: 12px;
+  font-size: 1.2rem;
   cursor: pointer;
 `;
 
 const MyAppointments = styled.p`
-  font-size: 12px;
+  font-size: 1.2rem;
   cursor: pointer;
 `;
 
@@ -43,38 +43,41 @@ const Downsection = styled.div`
 const Logo = styled.img`
   height: 100%;
   object-fit: contain;
-  padding: 20px 0;
+  padding: 2rem 0;
 
   cursor: pointer;
 `;
 
 const UserPanel = styled.div`
+  font-size: 1.6rem;
   color: #88ddff;
   background-color: #00748e;
-  padding: 5px 10px;
+  padding: 0.5rem 1rem;
   border-radius: 5px;
-  border: 1px solid #70eaff;
-  box-shadow: 0px 0px 10px #70eaff;
+  border: 1px solid #88ddff;
+  box-shadow: 0 0 1rem #88ddff;
   cursor: pointer;
 `;
 
-const DocInter = styled.div`
+const DocEnter = styled.div`
+  font-size: 1.6rem;
   color: #88ddff;
   background-color: #00748e;
-  padding: 5px 10px;
+  padding: 0.5rem 1rem;
   border-radius: 5px;
-  border: 1px solid #70eaff;
-  box-shadow: 0px 0px 10px #70eaff;
+  border: 1px solid #88ddff;
+  box-shadow: 0 0 1rem #88ddff;
   cursor: pointer;
 `;
 
 const QA = styled.div`
+  font-size: 1.6rem;
   color: #88ddff;
   background-color: #00748e;
-  padding: 5px 10px;
+  padding: 0.5rem 1rem;
   border-radius: 5px;
-  border: 1px solid #70eaff;
-  box-shadow: 0px 0px 10px #70eaff;
+  border: 1px solid #88ddff;
+  box-shadow: 0 0 1rem #88ddff;
   cursor: pointer;
 `;
 
@@ -84,16 +87,17 @@ const SearchContainer = styled.div`
   display: flex;
   align-items: center;
   margin: 0 auto;
-  padding: 5px;
+  padding: 0.5rem;
 `;
 
 const Input = styled.input`
-  height: 30px;
+  font-family: "IRANSans", "Vazir", Arial, sans-serif;
+  height: 3rem;
   border: none;
-  padding: 0 10px;
+  padding: 0 1rem;
   border-radius: 3px;
   :focus {
-    outline: 1px solid teal;
+    outline: 1px solid #00748e;
   }
 `;
 
@@ -122,7 +126,7 @@ const Navbar = ({ setSearchInput }) => {
         <Wrapper>
           <Logo src={logo} onClick={goToHome} />
           <UserPanel onClick={handleLogin}>ورود کاربران</UserPanel>
-          <DocInter>ورود پزشکان</DocInter>
+          <DocEnter>ورود پزشکان</DocEnter>
           <QA>پرسش و پاسخ پزشکی</QA>
           <SearchContainer>
             <SearchIcon

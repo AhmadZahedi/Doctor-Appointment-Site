@@ -7,15 +7,16 @@ const Wrapper = styled.div`
   flex: 3;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-auto-rows: 200px;
-  gap: 10px;
-  padding-top: 30px;
+  grid-auto-rows: 20rem;
+  gap: 1rem;
+  padding-top: 3rem;
 `;
 
 const Error = styled.span``;
 
 const Cards = ({ city, cat, searchInput }) => {
   let selectedItems = [];
+
   doctorsDetails.map((item) => {
     if (city && !cat && !searchInput) {
       if (item.city === city) {

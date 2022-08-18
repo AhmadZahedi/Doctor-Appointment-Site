@@ -1,23 +1,21 @@
-.appointmentContainer {
-  padding: 50px 100px;
+.appointment-container {
+  padding: 5rem 10rem;
 }
 
-.selectedDoctor {
-  margin-bottom: 50px;
+.selected-doctor {
+  margin-bottom: 5rem;
   display: flex;
   justify-content: center;
-  gap: 50px;
+  gap: 2rem;
 }
 
-.doctorImgWrapper {
-  width: 150px;
-  height: 150px;
-  /* border-radius: 10px; */
+.doctor-img-wrapper {
+  width: 15rem;
+  height: 15rem;
 
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
 }
 
 .img {
@@ -25,147 +23,125 @@
   height: cover;
 }
 
-.doctorInfo {
+.doctor-info {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
 
-.doctorNameWrapper {
+.doctor-name-wrapper {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 1rem;
 }
 
-.doctorNameText {
-  font-size: 22px;
+.doctor-name-text {
+  font-size: 2.2rem;
+  color: #333;
 }
 
-.doctorSpecialty {
-  font-size: 16px;
+.doctor-specialty {
+  font-size: 1.6rem;
 }
 
-.todaysDate {
+.todays-date {
   background-color: #d0faf3;
-  padding: 10px;
+  padding: 1rem;
   border-radius: 15px 15px 0 0;
 
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 50px;
+  gap: 2.5rem;
   user-select: none;
 }
 
-.todaysText {
-  color: #005568;
+.todays-text {
+  font-size: 1.8rem;
+  color: #00748e;
 }
 
-.timeTable {
-  height: 375px;
+.time-table {
+  height: 37.5rem;
   display: flex;
-  justify-content: space-around;
   align-items: flex-start;
 }
 
-.daysCol {
+.days-col {
+  height: 100%;
   flex: 1;
+  font-size: 1.6rem;
+
   display: flex;
   flex-direction: column;
-  gap: 10px;
-
-  margin-top: 10px;
+  gap: 1rem;
+  margin-top: 1rem;
 }
 
-.dayCheckboxWrapper {
-  padding: 5px 15px;
+.day-checkbox-wrapper {
+  padding: 0.5rem 1.5rem;
 
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 1rem;
   user-select: none;
 }
-
-/* .dayCheckboxWrapper:hover {
-  background-color: #d0faf3;
-}
-
-.dayCheckboxWrapper:active {
-  background-color: #00a187;
-} */
-
-/* NOT WORKING!!! */
-
-/* .dayCheckboxWrapper:focus {
-  background-color: #22003d;
-}
-
-.dayCheckboxWrapper:visited {
-  background-color: #c2006b;
-} */
 
 .day {
   cursor: pointer;
 }
 
-.clocksCol {
+.clocks-col {
+  height: 100%;
   flex: 1;
+  font-size: 1.6rem;
+
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  margin-top: 10px;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1rem;
 }
 
-.clockCheckboxWrapper {
-  padding: 5px;
+.clock-checkbox-wrapper {
+  padding: 0.5rem;
 
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 1rem;
   user-select: none;
 }
 
-.clockCheckboxWrapper input {
-  pointer-events: none;
-}
-/* 
-.clockCheckboxWrapper:hover {
-  background-color: #d0faf3;
-}
-
-.clockCheckboxWrapper:active {
-  background-color: #00a187;
-} */
-
-.freeClock {
-  color: #08eb00;
+.free-clock {
+  color: #2cbfd8;
   cursor: pointer;
 }
 
-.notFreeClock {
-  color: #c2006b;
+.not-free-clock {
+  color: #e60060;
   text-decoration: line-through;
   cursor: default !important;
   pointer-events: none;
 }
 
-.customerFormSection {
+.customer-form-section {
+  height: 24rem;
+
   display: flex;
   flex-direction: column;
-  gap: 30px;
   justify-content: center;
   align-items: center;
-
-  margin-top: 100px;
+  gap: 3rem;
+  margin-top: 10rem;
 }
 
 .hidden {
   display: none;
 }
 
-.customerSelectedTime {
-  color: rgb(255, 0, 64);
-  font-size: 20px;
+.customer-selected-time {
+  color: #e60060;
+  font-size: 2rem;
 }
 
 .form {
@@ -174,24 +150,31 @@
   gap: 10px;
 }
 
-.formRow {
+.form-row {
   display: flex;
-  gap: 20px;
+  gap: 2rem;
   justify-content: space-between;
 }
 
-.inputField {
-  border: 1px solid #005568;
-  border-radius: 5px;
-  padding: 5px 10px;
+.label {
+  font-size: 1.6rem;
 }
 
-.inputButton {
+.input-field {
+  border: 1px solid #005568;
+  border-radius: 3px;
+  padding: 0.5rem 1rem;
+}
+
+.input-button {
   font-family: "IRANSans", "Vazir", Arial, sans-serif;
+  font-size: 1.6rem;
+
   background-color: #0ecf38;
   color: #fff;
-  padding: 10px 0;
-  margin-top: 15px;
+
+  padding: 1rem 0;
+  margin-top: 1.5rem;
   border: none;
   border-radius: 10px;
 

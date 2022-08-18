@@ -32,16 +32,17 @@ const InfoWrapper = styled.div`
 const NameCityWrapper = styled.div`
   display: flex;
   justify-content: space-between;
-  padding: 5px 10px;
+  padding: 0.5rem 1rem;
 `;
 
 const City = styled.span`
-  font-size: 16px;
+  font-size: 1.6rem;
   color: #999;
 `;
 
 const Name = styled.span`
-  font-size: 20px;
+  font-size: 2rem;
+  color: #333;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -49,38 +50,48 @@ const Name = styled.span`
 `;
 
 const Specialty = styled.p`
+  font-size: 1.6rem;
   margin: 0;
   line-height: 2;
-  padding: 5px 10px;
-  font-size: 12px;
+  padding: 0.5rem 1rem;
 `;
 
-const LinkButton = styled.div`
-  font-size: 16px;
-  text-align: center;
-  padding: 5px 40px;
+const LinkButton = styled.button`
+  font-family: "IRANSans", "Vazir", Arial, sans-serif;
+  font-size: 1.6rem;
+
+  width: fit-content;
+  /* height: 3rem; */
+
+  padding: 0.5rem 4rem;
   color: #fff;
-  background-color: #036c9c;
-  border-radius: 10px;
+  background-color: #00748e;
+  border: none;
+  border-radius: 1rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   position: absolute;
   bottom: 5%;
   left: 50%;
   transform: translateX(-50%);
-  width: fit-content;
-  height: 30px;
   text-decoration: none;
   transition: all 0.3s ease;
 
+  cursor: pointer;
+
   &:hover,
   &:focus {
-    box-shadow: inset #004f74 0px 0px 0px 2px;
-    color: #036c9c;
+    box-shadow: inset #00748e 0 0 0 2px;
+    color: #00748e;
     background-color: #fff;
   }
 
   &:active {
-    box-shadow: 2px inset #036c9c;
-    color: #004f74;
+    box-shadow: 2px inset #00748e;
+    color: #00748e;
     background-color: #bae7fc;
   }
 `;

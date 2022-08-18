@@ -42,7 +42,20 @@
     url("fonts/Vazir-Bold.ttf") format("truetype");
 }
 
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
 body {
   font-family: "IRANSans", "Vazir", Arial, sans-serif;
   font-weight: normal;
+  color: #555;
+  overflow-x: hidden;
 }

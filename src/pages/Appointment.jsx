@@ -96,31 +96,29 @@ const Appointment = () => {
   return (
     <>
       <Navbar />
-      <div className="appointmentContainer">
-        <div className="selectedDoctor">
-          <div className="doctorImgWrapper">
+      <div className="appointment-container">
+        <div className="selected-doctor">
+          <div className="doctor-img-wrapper">
             <img className="img" alt="Doctor image" src={selectedDoctor.img} />
           </div>
-          <div className="doctorInfo">
-            <div className="doctorNameWrapper">
-              <div className="doctorNameText">دکتر {selectedDoctor.name}</div>
-              <VerifiedIcon
-                color="primary"
-                style={{ fontSize: "30", paddingRight: "10" }}
-              />
+          <div className="doctor-info">
+            <div className="doctor-name-wrapper">
+              <div className="doctor-name-text">دکتر {selectedDoctor.name}</div>
+              <VerifiedIcon color="primary" style={{ fontSize: 20 }} />
             </div>
-            <div className="doctorSpecialty">{selectedDoctor.specialty}</div>
+            <div className="doctor-specialty">{selectedDoctor.specialty}</div>
           </div>
         </div>
-        <div className="todaysDate">
+        <div className="todays-date">
           <TodayRoundedIcon style={{ fontSize: 40, color: "#00748e" }} />
-          <div className="todaysText">امروز &lArr; {todayDate}</div>
+          <div className="todays-text">امروز &lArr; {todayDate}</div>
         </div>
-        <div className="timeTable">
-          <div className="daysCol">
+        <div className="time-table">
+          <div className="days-col">
             {selectedDoctor.times.map((item) => (
-              <div className="dayCheckboxWrapper" key={item.day[0].dayId}>
+              <div className="day-checkbox-wrapper" key={item.day[0].dayId}>
                 <input
+                  className="day"
                   type="radio"
                   name="date"
                   id={item.day[0].dayId}
@@ -135,10 +133,11 @@ const Appointment = () => {
               </div>
             ))}
           </div>
-          <div className="clocksCol">
+          <div className="clocks-col">
             {times?.map((item) => (
-              <div key={item.T} className="clockCheckboxWrapper">
+              <div key={item.T} className="clock-checkbox-wrapper">
                 <input
+                  className={item.isFree ? "free-clock" : "not-free-clock"}
                   type="radio"
                   name="clock"
                   id={item.T}
@@ -148,7 +147,7 @@ const Appointment = () => {
                   onClick={handleClockChoice}
                 />
                 <label
-                  className={item.isFree ? "freeClock" : "notFreeClock"}
+                  className={item.isFree ? "free-clock" : "not-free-clock"}
                   htmlFor={item.T}
                 >
                   {item.T}
@@ -157,17 +156,17 @@ const Appointment = () => {
             ))}
           </div>
         </div>
-        <div className={showForm ? "customerFormSection" : "hidden"}>
-          <p className="customerSelectedTime">
+        <div className={showForm ? "customer-form-section" : "hidden"}>
+          <p className="customer-selected-time">
             زمان مورد انتخاب شما: روز {dayValue} ساعت {clockValue}
           </p>
           <form action="" className="form" onSubmit={handleSubmit}>
-            <div className="formRow">
+            <div className="form-row">
               <label className="label" htmlFor="firstName">
                 نام
               </label>
               <input
-                className="inputField"
+                className="input-field"
                 type="text"
                 id="firstName"
                 name="Name"
@@ -175,12 +174,12 @@ const Appointment = () => {
               />
             </div>
 
-            <div className="formRow">
+            <div className="form-row">
               <label className="label" htmlFor="surName">
                 نام خانوادگی
               </label>
               <input
-                className="inputField"
+                className="input-field"
                 type="text"
                 id="surName"
                 name="surName"
@@ -188,12 +187,12 @@ const Appointment = () => {
               />
             </div>
 
-            <div className="formRow">
+            <div className="form-row">
               <label className="label" htmlFor="phone">
                 شماره تلفن همراه
               </label>
               <input
-                className="inputField"
+                className="input-field"
                 type="phone"
                 id="phone"
                 name="phone"
@@ -201,7 +200,7 @@ const Appointment = () => {
               />
             </div>
 
-            <button className="inputButton" type="submit">
+            <button className="input-button" type="submit">
               ثبت نوبت
             </button>
           </form>

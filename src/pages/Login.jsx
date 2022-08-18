@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "./css/Login.css";
 
 const Login = () => {
@@ -11,10 +11,16 @@ const Login = () => {
     e.preventDefault();
   };
 
+  const navigate = useNavigate();
+
+  const goToHome = () => {
+    navigate("/");
+  };
+
   return (
-    <div className="loginBody">
-      <div className="loginContainer">
-        <form className="loginForm" onSubmit={handleSubmit}>
+    <div className="login-body">
+      <div className="login-container">
+        <form className="login-form" onSubmit={handleSubmit}>
           <div className="fieldset">
             <label className="label" htmlFor="firstLastName">
               نام و نام خانوادگی
@@ -54,15 +60,20 @@ const Login = () => {
               onChange={(e) => setEmail(e.target.value)}
             />
           </div>
-          <button className="loginButton" type="submit">
+          <button className="login-button" type="submit">
             ورود
           </button>
-          <Link className="loginLink" to="/register">
+          <Link className="login-link" to="/register">
             تاکنون ثبت نام نکرده‌اید؟
           </Link>
         </form>
       </div>
-      <img className="loginLogo" alt="logo" src="../imgs/LunaFinalWhite.png" />
+      <img
+        className="login-logo"
+        alt="logo"
+        src="../imgs/LunaFinalWhite.png"
+        onClick={goToHome}
+      />
     </div>
   );
 };

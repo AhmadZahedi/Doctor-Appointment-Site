@@ -4,24 +4,26 @@ import KeyboardArrowLeftIcon from "@mui/icons-material/KeyboardArrowLeft";
 import { doctorsDetails } from "../data";
 
 const Wrapper = styled.div`
-  width: 250px;
-  height: 1000px;
+  width: 25rem;
+  height: 100rem;
   display: flex;
   flex-direction: column;
   flex: 1;
+  margin-top: 3rem;
 `;
 
 const Select = styled.select`
   font-family: "IRANSans", "Vazir", Arial, sans-serif;
-  font-size: 16px;
-  border: 2px solid #dddddd;
-  border-radius: 8px;
+  color: #555;
+  font-size: 1.6rem;
+  border: 2px solid #ddd;
+  border-radius: 0.5rem;
   outline-style: none;
-  padding: 15px 15px;
-  margin: 30px 0 15px 0;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
 
   :focus {
-    border: 2px solid teal;
+    border: 2px solid #00748e;
   }
 
   option {
@@ -32,18 +34,27 @@ const Select = styled.select`
 const Categories = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 0.5rem;
 `;
 
 const CategorieItem = styled.div`
   display: flex;
-  gap: 5px;
+  align-items: center;
+  gap: 0.5rem;
   cursor: pointer;
+  user-select: none;
+
+  &:hover {
+    color: #000;
+  }
+
+  &:active {
+    color: #2cbfd8;
+  }
 `;
 
 const CategorieItemText = styled.div`
-  font-size: 18px;
-  text-transform: lowercase;
+  font-size: 1.8rem;
 `;
 
 const Sidebar = ({ setCity, setCat }) => {

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "./css/Register.css";
 
 const Register = () => {
@@ -14,10 +14,17 @@ const Register = () => {
     e.preventDefault();
     if (pass !== rPass) alert("WRONG PASSWORD!");
   };
+
+  const navigate = useNavigate();
+
+  const goToHome = () => {
+    navigate("/");
+  };
+
   return (
-    <div className="registerBody">
-      <div className="registerContainer">
-        <form className="registerForm" onSubmit={handleSubmit}>
+    <div className="register-body">
+      <div className="register-container">
+        <form className="register-form" onSubmit={handleSubmit}>
           <div className="fieldset">
             <label className="label" htmlFor="firstName">
               نام
@@ -97,18 +104,19 @@ const Register = () => {
               onChange={(e) => setEmail(e.target.value)}
             />
           </div>
-          <button className="registerButton" type="submit">
+          <button className="register-button" type="submit">
             ورود
           </button>
-          <Link className="registerLink" to="/login">
+          <Link className="register-link" to="/login">
             قبلا ثبت نام کرده‌اید؟
           </Link>
         </form>
       </div>
       <img
-        className="registerLogo"
+        className="register-logo"
         alt="logo"
         src="../imgs/LunaFinalWhite.png"
+        onClick={goToHome}
       />
     </div>
   );

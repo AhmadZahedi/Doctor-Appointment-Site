@@ -22,12 +22,6 @@ const Doctor = () => {
     if (item.id == id) selectedDoctor = item;
   });
 
-  const starsProducer = (n) => {
-    for (let i = 0; i < 5; i++) {
-      return <StarOutlineIcon />;
-    }
-  };
-
   let navigate = useNavigate();
 
   const goToMyGithub = () => {
@@ -42,87 +36,92 @@ const Doctor = () => {
     <>
       <Navbar />
       <div className="container">
-        <div className="upSection">
-          <div className="cardButtonsWrapper">
+        <div className="up-section">
+          <div className="card-buttons-wrapper">
             <div className="card">
-              <div className="imgWrapper">
+              <div className="img-wrapper">
                 <img className="img" src={selectedDoctor.img} />
               </div>
-              <div className="infoWrapper">
-                <div className="nameWrapper">
+              <div className="info-wrapper">
+                <div className="name-wrapper">
                   <div className="name">دکتر {selectedDoctor.name}</div>
                   <VerifiedIcon
                     color="primary"
-                    style={{ fontSize: "30", paddingRight: "10" }}
+                    style={{ fontSize: 30, paddingRight: 10 }}
                   />
                 </div>
-                <div className="citySpecialtyWrapper">
+                <div className="city-specialty-wrapper">
                   <div className="specialty">{selectedDoctor.specialty}</div>
                   <div className="city">{selectedDoctor.city}</div>
                 </div>
-                <div className="paramsWrapper">
-                  <div className="followersWrapper">
-                    <div className="followersCount">
+                <div className="params-wrapper">
+                  <div className="followers-wrapper">
+                    <div className="followers-count">
                       {selectedDoctor.followers} دنبالکننده
                     </div>
-                    <PersonOutlineIcon color="primary" />
+                    <PersonOutlineIcon
+                      color="primary"
+                      style={{ fontSize: 25 }}
+                    />
                   </div>
-                  <div className="gmcNumWrapper">
+                  <div className="gmcNum-wrapper">
                     <div className="gmcNum">
                       شماره نظام: {selectedDoctor.gmc}
                     </div>
-                    <PolicyIcon color="primary" />
+                    <PolicyIcon color="primary" style={{ fontSize: 20 }} />
                   </div>
                 </div>
               </div>
             </div>
-            <div className="buttonsWrapper">
-              <div className="myListButton">
-                <PostAddIcon style={{ color: "#ffffff" }} />
-                <p className="myListButtonText">لیست من</p>
+            <div className="buttons-wrapper">
+              <div className="my-list-button">
+                <PostAddIcon style={{ color: "#fff", fontSize: 20 }} />
+                <p className="my-list-button-text">لیست من</p>
               </div>
               <div
-                className="getAppointmetnButton"
+                className="get-appointmetn-button"
                 onClick={goToApopintmentPage}
               >
-                <EventAvailableIcon style={{ color: "#ffffff" }} />
-                <p className="getAppointmentButtonText">دریافت نوبت اینترنتی</p>
+                <EventAvailableIcon style={{ color: "#fff", fontSize: 30 }} />
+                <p className="get-appointment-button-text">
+                  دریافت نوبت اینترنتی
+                </p>
               </div>
             </div>
           </div>
-          <div className="furtherInformation">
-            <h3 className="furtherInformationTitle">
+          <div className="further-information">
+            <h3 className="further-information-title">
               اطلاعات تکمیلی <hr />
             </h3>
-            <div className="furtherInformationText">
+            <div className="further-information-text">
               <div className="university">
                 {selectedDoctor.specialty} فارغ التحصیل از دانشگاه
                 {` ` + selectedDoctor.uni}
               </div>
               <p className="address">آدرس: {selectedDoctor.address}</p>
               <p className="phone">تلفن تماس :{selectedDoctor.phone}</p>
-              <p className="timeText">{selectedDoctor.timeText}</p>
+              <p className="time-text">{selectedDoctor.timeText}</p>
             </div>
             <div className="connections">
               <div className="instagram" onClick={goToMyGithub}>
                 <InstagramIcon style={{ fontSize: 34, color: "#e60060" }} />
-                <p className="instagramText">
+                <p className="instagram-text">
                   صفحه دکتر {selectedDoctor.name} در فضای مجازی
                 </p>
               </div>
             </div>
           </div>
         </div>
-        <div className="downSection">
-          <div className="commentSection">
-            <div className="commentTitle">نظرات</div>
+        <div className="down-section">
+          <div className="comment-section">
+            <div className="comment-title">نظرات</div>
             <div className="comments">
               {selectedDoctor.customers.map((item) => {
                 return (
-                  <div key={parseInt(item.customerId, 10)} className="comment">
-                    <div className="nameStarsWrapper">
-                      <div className="commentName">{item.name}</div>
-                      <div className="commentStars">
+                  <div className="comment" key={parseInt(item.customerId, 10)}>
+                    <div className="name-stars-wrapper">
+                      <div className="comment-name">{item.name}</div>
+                      <div className="comment-stars">
                         {[...Array(5)].map((elem, index) =>
                           index < item.stars ? (
                             <StarIcon
@@ -138,59 +137,59 @@ const Doctor = () => {
                         )}
                       </div>
                     </div>
-                    <div className="commentText">{item.comment}</div>
+                    <div className="comment-text">{item.comment}</div>
                     <hr />
                   </div>
                 );
               })}
             </div>
           </div>
-          <div className="recommendersContainer">
-            <div className="recommendersTitle">
-              کسانیکه دکتر {selectedDoctor.name} را پیشنهاد می‌کنند
+          <div className="recommenders-container">
+            <div className="recommenders-title">
+              کسانی که دکتر {selectedDoctor.name} را پیشنهاد می‌کنند
             </div>
             <div className="recommenders">
-              <div className="recommenderCard">
-                <div className="recommenderImgWrapper">
+              <div className="recommender-card">
+                <div className="recommender-img-wrapper">
                   <img
-                    className="recommenderImg"
+                    className="recommender-img"
                     alt="Dr. Image"
                     src="https://images.unsplash.com/photo-1579165466949-3180a3d056d5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzB8fGRvY3RvcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
                   />
                 </div>
-                <div className="recommenderInfo">
-                  <div className="recommenderName">رضا یزدانی</div>
-                  <div className="recommenderDesc">
+                <div className="recommender-info">
+                  <div className="recommender-name">رضا یزدانی</div>
+                  <div className="recommender-desc">
                     استاد دانشگاه علوم پزشکی مشهد
                   </div>
                 </div>
               </div>
-              <div className="recommenderCard">
-                <div className="recommenderImgWrapper">
+              <div className="recommender-card">
+                <div className="recommender-img-wrapper">
                   <img
-                    className="recommenderImg"
+                    className="recommender-img"
                     alt="Dr. Image"
                     src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
                   />
                 </div>
-                <div className="recommenderInfo">
-                  <div className="recommenderName">رضا یزدانی</div>
-                  <div className="recommenderDesc">
+                <div className="recommender-info">
+                  <div className="recommender-name">رضا یزدانی</div>
+                  <div className="recommender-desc">
                     استاد دانشگاه علوم پزشکی مشهد
                   </div>
                 </div>
               </div>
-              <div className="recommenderCard">
-                <div className="recommenderImgWrapper">
+              <div className="recommender-card">
+                <div className="recommender-img-wrapper">
                   <img
-                    className="recommenderImg"
+                    className="recommender-img"
                     alt="Dr. Image"
                     src="https://images.pexels.com/photos/5407206/pexels-photo-5407206.jpeg?auto=compress&cs=tinysrgb&w=600"
                   />
                 </div>
-                <div className="recommenderInfo">
-                  <div className="recommenderName">رضا یزدانی</div>
-                  <div className="recommenderDesc">
+                <div className="recommender-info">
+                  <div className="recommender-name">رضا یزدانی</div>
+                  <div className="recommender-desc">
                     استاد دانشگاه علوم پزشکی مشهد
                   </div>
                 </div>
