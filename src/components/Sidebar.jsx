@@ -10,6 +10,10 @@ const Wrapper = styled.div`
   flex-direction: column;
   flex: 1;
   margin-top: 3rem;
+
+  @media (max-width: 75em) {
+    margin-top: 1rem;
+  }
 `;
 
 const Select = styled.select`
@@ -28,6 +32,23 @@ const Select = styled.select`
 
   option {
     color: #333;
+
+    @media (max-width: 75em) {
+      font-size: 1.4rem;
+    }
+  }
+
+  @media (max-width: 84em) {
+    padding: 1rem;
+  }
+
+  @media (max-width: 75em) {
+    padding: 0.5rem;
+    font-size: 1.4rem;
+  }
+
+  @media (max-width: 34em) {
+    width: 20rem;
   }
 `;
 
@@ -35,6 +56,16 @@ const Categories = styled.div`
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+
+  @media (max-width: 59em) {
+    height: 15rem;
+    flex-wrap: wrap;
+    column-gap: 8rem;
+  }
+  @media (max-width: 34em) {
+    height: fit-content;
+    column-gap: 4rem;
+  }
 `;
 
 const CategorieItem = styled.div`
@@ -55,6 +86,10 @@ const CategorieItem = styled.div`
 
 const CategorieItemText = styled.div`
   font-size: 1.8rem;
+
+  @media (max-width: 75em) {
+    font-size: 1.4rem;
+  }
 `;
 
 const Sidebar = ({ setCity, setCat }) => {

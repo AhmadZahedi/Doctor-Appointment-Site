@@ -2,6 +2,9 @@ import React from "react";
 import "./css/Footer.css";
 
 const Footer = () => {
+  const goToHome = () => {
+    window.scrollTo(0, 0);
+  };
   return (
     <div className="footer-container">
       <div className="rightCol">
@@ -24,7 +27,7 @@ const Footer = () => {
           <li>قوانین سایت</li>
         </ul>
       </div>
-      <div className="logoContainer">
+      <div className="logo-container" onClick={goToHome}>
         <img alt="logo image" src="../imgs/LunaFinalWhite.png" />
       </div>
     </div>

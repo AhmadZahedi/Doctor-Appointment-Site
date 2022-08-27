@@ -4,11 +4,29 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Sidebar from "../components/Sidebar";
 import styled from "styled-components";
+import "./css/queries.css";
 
 const Container = styled.div`
   display: flex;
   gap: 2rem;
-  padding: 0 10rem;
+  padding: 5rem 10rem;
+
+  @media (max-width: 75em) {
+    gap: 1rem;
+    padding-top: 2.5rem;
+  }
+
+  @media (max-width: 59em) {
+    flex-direction: column;
+  }
+
+  @media (max-width: 40em) {
+    padding: 0 5rem;
+  }
+
+  @media (max-width: 34em) {
+    padding: 0 2.5rem;
+  }
 `;
 
 const Home = () => {

@@ -3,13 +3,6 @@
 
 
 
-- gray-colors : 
-   - #ddd
-   - #555
-   - #333
-   - #999
-
-
 - Navbar-dark-blue : #00748e
 - Navbar-light-blue : #2cbfd8 
 - Instagram-pink : #e60060
@@ -17,24 +10,31 @@
 - Button-green : #0ecf38
 - label-green : #002533
 
-- shades  
-    - #88ddff
-    - #bae7fc
-    - #d0faf3
+- Gray-colors : 
+   - #ddd
+   - #555
+   - #333
+   - #999
+
+
+- Shades  
+   - #88ddff
+   - #bae7fc
+   - #d0faf3
 
 
 
+--- 02 SHADOWS
+   - box-shadow: 0 0 1rem #88ddff;
 
 
---- BORDER-RADIUS
-- 5px
-- 10px
-- 3px (inputs)
-- 15px (section boxes) 
+--- 03 BORDER-RADIUS
+   - 5px
+   - 10px
+   - 3px (inputs)
+   - 15px (section boxes) 
 
 
---- SHADOWS
--   box-shadow: 0 0 1rem #88ddff;
 
 
 

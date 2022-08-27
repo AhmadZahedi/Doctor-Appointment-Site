@@ -1,0 +1,113 @@
+.navbar-container {
+}
+
+.upsection {
+  background-color: #2cbfd8;
+  height: 12rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 10rem;
+}
+
+.luna-text {
+  font-size: 2.4rem;
+  color: #fff;
+}
+
+.logo {
+  height: 8rem;
+
+  cursor: pointer;
+}
+
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: none;
+}
+
+.icon-mobile-nav {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: #fff;
+  z-index: 10;
+}
+
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
+}
+
+.downsection {
+  background-color: #2cbfd8;
+  color: #fff;
+  height: 8rem;
+
+  display: flex;
+  align-items: center;
+}
+
+.navbar-wrapper {
+  padding: 0 10rem;
+
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  gap: 3rem;
+}
+
+.user-panel {
+  font-size: 1.6rem;
+  color: #88ddff;
+  background-color: #00748e;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  border: 1px solid #88ddff;
+  box-shadow: 0 0 1rem #88ddff;
+  cursor: pointer;
+}
+
+.doc-enter {
+  font-size: 1.6rem;
+  color: #88ddff;
+  background-color: #00748e;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  border: 1px solid #88ddff;
+  box-shadow: 0 0 1rem #88ddff;
+  cursor: pointer;
+}
+
+.QA {
+  font-size: 1.6rem;
+  color: #88ddff;
+  background-color: #00748e;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  border: 1px solic #88ddff;
+  box-shadow: 0 0 1rem #88ddff;
+  cursor: pointer;
+}
+
+.search-container {
+  background-color: #fff;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  /* margin: 0 auto; */
+  padding: 0.5rem;
+}
+
+.input {
+  font-family: "IRANSans", "Vazir", Arial, sans-serif;
+  height: 3rem;
+  border: none;
+  padding: 0 1rem;
+  border-radius: 3px;
+}
+
+.input:focus {
+  outline: 1px solid #00748e;
+}

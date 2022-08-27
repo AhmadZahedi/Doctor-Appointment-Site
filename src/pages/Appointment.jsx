@@ -1,13 +1,11 @@
 import React, { useState } from "react";
 import "./css/Appointment.css";
+import "./css/queries.css";
 import { useLocation } from "react-router-dom";
 import { doctorsDetails } from "../data";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import TodayRoundedIcon from "@mui/icons-material/TodayRounded";
-import CheckCircleOutlineIcon from "@mui/icons-material/CheckCircleOutline";
-import RadioButtonUncheckedIcon from "@mui/icons-material/RadioButtonUnchecked";
-import CancelOutlinedIcon from "@mui/icons-material/CancelOutlined";
 import VerifiedIcon from "@mui/icons-material/Verified";
 
 const Appointment = () => {

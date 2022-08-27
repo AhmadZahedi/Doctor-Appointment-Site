@@ -32,12 +32,21 @@ const InfoWrapper = styled.div`
 const NameCityWrapper = styled.div`
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 0.5rem 1rem;
 `;
 
 const City = styled.span`
   font-size: 1.6rem;
   color: #999;
+
+  @media (max-width: 75em) {
+    font-size: 1.2rem;
+  }
+
+  @media (max-width: 56em) {
+    font-size: 1rem;
+  }
 `;
 
 const Name = styled.span`
@@ -47,6 +56,14 @@ const Name = styled.span`
   justify-content: center;
   align-items: center;
   flex-flow: row-reverse;
+
+  @media (max-width: 75em) {
+    font-size: 1.8rem;
+  }
+
+  @media (max-width: 56em) {
+    font-size: 1.6rem;
+  }
 `;
 
 const Specialty = styled.p`
@@ -54,6 +71,14 @@ const Specialty = styled.p`
   margin: 0;
   line-height: 2;
   padding: 0.5rem 1rem;
+
+  @media (max-width: 75em) {
+    font-size: 1.4rem;
+  }
+
+  @media (max-width: 56em) {
+    font-size: 1.2rem;
+  }
 `;
 
 const LinkButton = styled.button`
@@ -93,6 +118,10 @@ const LinkButton = styled.button`
     box-shadow: 2px inset #00748e;
     color: #00748e;
     background-color: #bae7fc;
+  }
+
+  @media (max-width: 75em) {
+    font-size: 1.4rem;
   }
 `;
 
