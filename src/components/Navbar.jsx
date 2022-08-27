@@ -23,6 +23,18 @@ const Navbar = ({ setSearchInput }) => {
     setNavOpen((current) => !current);
   };
 
+  const handleOverlayClick = () => {
+    setNavOpen(false);
+  };
+
+  const handleScroll = () => {
+    setNavOpen(false);
+  };
+
+  if (navOpen) {
+    window.addEventListener("scroll", handleScroll);
+  }
+
   return (
     <div className={navOpen ? "navbar-container nav-open" : "navbar-container"}>
       <div className="upsection">
@@ -30,7 +42,24 @@ const Navbar = ({ setSearchInput }) => {
           <ion-icon class="icon-mobile-nav" name="menu-outline" />
           <ion-icon class="icon-mobile-nav" name="close-outline" />
         </button>
-        <p className="luna-text">luna.ir</p>
+        {/* <p className="luna-text">luna.ir</p> */}
+        <div className="search-container">
+          <SearchIcon
+            style={{
+              color: "gray",
+              fontSize: 22,
+              margin: 10,
+              cursor: "pointer",
+            }}
+            onClick={handleSearch}
+          />
+          <input
+            type="text"
+            className="input"
+            placeholder="جستجو..."
+            onChange={(e) => setSearchInput(e.target.value)}
+          />
+        </div>
         <img alt="logo image" className="logo" src={logo} onClick={goToHome} />
       </div>
       <div className="downsection">
@@ -40,25 +69,9 @@ const Navbar = ({ setSearchInput }) => {
           </p>
           <p className="doc-enter">ورود پزشکان</p>
           <p className="QA">پرسش و پاسخ پزشکی</p>
-          <div className="search-container">
-            <SearchIcon
-              style={{
-                color: "gray",
-                fontSize: 22,
-                margin: 10,
-                cursor: "pointer",
-              }}
-              onClick={handleSearch}
-            />
-            <input
-              type="text"
-              className="input"
-              placeholder="جستجو..."
-              onChange={(e) => setSearchInput(e.target.value)}
-            />
-          </div>
         </div>
       </div>
+      <div className="overlay" onClick={handleOverlayClick}></div>
     </div>
   );
 };
