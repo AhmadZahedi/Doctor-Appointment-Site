@@ -6,9 +6,18 @@ import "./css/Navbar.css";
 import "./css/NavbarQueries.css";
 
 const Navbar = ({ setSearchInput }) => {
+  let openSearchInitial;
+  if (window.innerWidth <= 544) {
+    openSearchInitial = false;
+  } else {
+    openSearchInitial = true;
+  }
   const [navOpen, setNavOpen] = useState(false);
+  const [openSearch, setOpenSearch] = useState(openSearchInitial);
 
-  const handleSearch = (e) => {};
+  const handleSearch = (e) => {
+    setOpenSearch((current) => !current);
+  };
 
   const navigate = useNavigate();
   const handleLogin = () => {
@@ -55,7 +64,7 @@ const Navbar = ({ setSearchInput }) => {
           />
           <input
             type="text"
-            className="input"
+            className={openSearch ? "input" : "input hidden"}
             placeholder="جستجو..."
             onChange={(e) => setSearchInput(e.target.value)}
           />

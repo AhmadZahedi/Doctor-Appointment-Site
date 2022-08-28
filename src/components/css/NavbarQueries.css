@@ -130,3 +130,19 @@
     opacity: 100%;
   }
 }
+
+@media (max-width: 46em) {
+  .downsection {
+    width: 50vw;
+  }
+}
+
+@media (max-width: 34em) {
+  .upsection {
+    padding: 0.5rem 2.5rem;
+  }
+
+  .hidden {
+    display: none;
+  }
+}
